@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ /* FOOTER */
+
+ .footer{
+    width: 100%;
+    height: 80vh;
+    background-image:url(../Index-Image/FOOTER-BG.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.footer-content-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    z-index: 10;
+    color: #9c161f;
+}
+
+.footer-content-container h1{
+    font-size: 1.5rem;
+    width: 100%;
+    line-height: 5rem;
+    font-weight: 700;
+}
+
+.footer-content-container p, .footer-content-container a{
+    width: 100%;
+    line-height: 1.5rem;
+    color: #023020;
+    font-weight: 600;
+    text-decoration: none;
+ }
+
+.left-footer{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    place-self: center;
+ }
+
+ .external-icons{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    gap: 1rem;
+}
+
+.external-icons a, .webdev-logos a{
+    width: 100%;
+    height: 100%;
+}
+.external-icons a:nth-child(1){
+    background-image: url(../Index-Image/Food-Panda-Footer.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+}
+
+.external-icons a:nth-child(2){
+    background-image: url(../Index-Image/Grab-Food-Footer.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+}
+
+.external-icons a:nth-child(3){
+    background-image: url(../Index-Image/Facebook-Footer.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+}
+
+.center-footer{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    place-self: center;
+ }
+
+.center-footer input {
+    margin-top: 5%;
+    padding: 2%;
+    width: 100%;
+    color: #023020;
+    border-radius: 50px;
+    border: solid #9c161f 2px;
+ }
+
+.button {
+    width: 100%;
+    height: 35px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #016450;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    top: 62%;
+    left: 0.1em;
+    margin-top: 1%;
+    }
+
+  .button:hover {
+    background-color: #fff0;
+    box-shadow: 0px 5px 15  px #9c161f;
+    color: #023020;
+    border: 1px solid #023020;
+  }
+
+ .right-footer{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    place-self: center;
+ }
+
+ .right-footer div{
+    margin-top: 5%;
+ }
+
+ .webdev-logos{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    gap: 1rem;
+}
+
+ .webdev-logos a:nth-child(1){
+    background-image: url(../Index-Image/Google-Font-Footer.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.webdev-logos a:nth-child(2){
+    background-image: url(../Index-Image/Ionic-Footer.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.webdev-logos a:nth-child(3){
+    background-image: url(../Index-Image/Canva-Footer.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.webdev-logos a:nth-child(4){
+    background-image: url(../Index-Image/Photoshop-Footer.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.webdev-logos a:hover ,.external-icons a:hover{ 
+    transform: scale(1.05);
+}
+
+.right-footer a:hover{ 
+    font-size: 1.2rem;
+    transition: 200ms;
+    background-color: #016450;
+    color: #ffcf60;
+    padding: 0 5% 0 5%;
+}
+
+@media (max-width: 1400px) and (min-width: 1150px) {
+    .external-icons {
+        width: 85%;
+        height: 9vh;
+    }
+
+    .footer-content-container p, .footer-content-container a {
+        line-height: 1rem;
+    }
+
+    .center-footer {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 1025px) and (min-width: 889px) {
+    .footer {
+        height: 60vh;
+    }
+
+    .footer-content-container {
+        height: auto;
+    }
+
+    .footer-content-container h1 {
+        line-height: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .footer-content-container p,
+    .footer-content-container a {
+        line-height: normal;
+        font-size: .9rem;
+    }
+}
+
+
+@media all and (max-width: 888px) and (min-width: 769px) {
+    .footer {
+        height: 70vh;
+    }
+
+    .footer-content-container{
+        height: auto;
+        padding: 1em;
+        gap: 1rem;
+    }
+
+    .footer-content-container h1{
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .footer-content-container p, .footer-content-container a {
+        line-height: normal;
+        font-size: .9rem;
+    }
+
+    .external-icons {
+        height: 3em;
+        gap: 0;
+    }
+    
+    .center-footer input::placeholder {
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    .button {
+        margin-top: 1em;
+    }
+    
+    .right-footer a:hover {
+        font-size: 1rem;
+        border-radius: 60px;
+    }
+
+}
+
+@media (max-width:768px) and (min-width: 700px) {
+    .footer {
+        height: 70vh;
+    }
+
+    .footer-content-container{
+        height: auto;
+        padding: 1em;
+        gap: 1rem;
+    }
+
+    .footer-content-container h1{
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .footer-content-container p, .footer-content-container a {
+        line-height: normal;
+        font-size: .9rem;
+    }
+
+    .external-icons {
+        height: 3em;
+        gap: 0;
+    }
+    
+    .center-footer input::placeholder {
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .button {
+        margin-top: 1em;
+    }
+
+    .right-footer a:hover {
+        font-size: 1rem;
+        border-radius: 60px;
+    }
+
+    .webdev-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: .5rem;
+    }
+}
+
+@media (max-width: 699px) and (min-width: 600px) {
+    .footer{
+        background-color: #ffcf60;
+        height: 140vh;
+        background-image: none;
+    }
+
+    .footer-content-container{
+        position: absolute;
+        transform: translateY(-35%);
+        width: 100%;
+        height: 140vh;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-template-columns:1fr;
+        background: #ffcf60;
+        grid-row-gap: 3rem;
+    }
+
+    .left-footer{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+     .center-footer{
+        grid-column: 1/2;
+        grid-row: 2/3;
+     }
+
+     .center-footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .right-footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0 5% 0 5%;
+     }
+
+     .footer-content-container h1, .footer-content-container p,
+     .footer-content-container a{
+        text-align: center;
+ 
+    }
+
+    .center-footer p{
+        padding: 0 12% 0 12%;
+        width: fit-content;
+    }
+
+    .center-footer input{
+        width: 80%;
+     }
+
+     .button {
+        position: relative;
+        right: 0;
+        width:80%;
+        margin-top: 1%;
+     }
+
+
+    
+}
+
+
+@media all and (max-width:426px){
+    .footer{
+        background: #ffcf60;
+        height: 140vh;
+    }
+
+    .footer-content-container{
+        position: absolute;
+        transform: translateY(-35%);
+        width: 100%;
+        height: 100vh;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-template-columns:1fr;
+        background: #ffcf60;
+        grid-row-gap: 3rem;
+    }
+
+    .left-footer{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    
+     }
+
+     .center-footer{
+        grid-column: 1/2;
+        grid-row: 2/3;
+     }
+
+     .center-footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .right-footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0 5% 0 5%;
+     }
+
+     .footer-content-container h1, .footer-content-container p,
+     .footer-content-container a{
+        text-align: center;
+ 
+    }
+
+    .center-footer p{
+        padding: 0 12% 0 12%;
+        width: fit-content;
+    }
+
+    .center-footer input{
+        width: 80%;
+     }
+
+     .button {
+        position: relative;
+        right: 0;
+        width:80%;
+        margin-top: 1%;
+     }
+    
+
+}
+
+@media all and (max-width:321px){
+    .footer-content-container{
+        transform: translateY(-40%);
+    }
+}
+

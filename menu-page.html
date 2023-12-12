@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco's Asian Food Store</title>
+    <link rel="shortcut icon" href="./Menu-Images/Menu-Assets/favicon-32x32.png" type="image/x-icon">
+
+    <!-- ===================================================
+    =============   S T Y L E   S H E E T S    =============
+    ========================================================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Menu-Styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Menu-Styles/menu-styles.css">
+    <link rel="stylesheet" href="./Menu-Styles/menu-styles-responsive.css">
+    <link rel="stylesheet" href="./Menu-Styles/footer-styles.css">
+    
+</head>
+<body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "139720289235535");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- ===============================================================
+    =============   C U S T O M I Z E D     C U R S O R    =============
+    ====================================================================-->
+    <div class="cursor-dot" data-cursor-dot><img src="./Menu-Images/Menu-Assets/logo.png" alt=""></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    
+    <!-- ===================================================
+    =============   N E W E S T     F O O D    =============
+    ========================================================-->
+    <div class="new-menu-landing-page" id="top-again">
+        <div class="bg">
+            <div class="bg-product">
+                <div class="container product">
+                    <div class="row">
+                        <div id="sliderproduct" class="carousel slide " data-ride="carousel" data-interval="false">
+                            <ol class="carousel-indicators">
+                                <li data-target="#sliderproduct" data-slide-to="0" class="active"></li>
+                                <li data-target="#sliderproduct" data-slide-to="1"></li>
+                                <li data-target="#sliderproduct" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox" data-interval="false">
+                                <div class="carousel-item active">
+                                    <div class="container text-center">
+                                        <div class="row">
+                                            <div class="col-sm-6 image">
+                                                <div class="item">
+                                                    <img src="./Menu-Images/Menu-Assets/newest-prod1.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="details">
+                                                    <h2>Try our newest product</h2>
+                                                    <h1 class="cr3">Shrimp Gambas</h1>
+                                                    <p class="cr4">A classic delight, features plump shrimp, garlic, and vibrant veggies sizzling on a hot plate. The perfect blend of paprika, cayenne, and a dash of citrusy lemon or calamansi creates an original explosion flavors that embodies.</p>
+                                                    <p class="cr1"><i class="fa-solid fa-peso-sign"></i>&nbsp;299</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="container text-center">
+                                        <div class="row">
+                                            <div class="col-sm-6 image">
+                                                <div class="item">
+                                                    <img src="./Menu-Images/Menu-Assets/newest-prod2.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="details">
+                                                    <h2>Try our newest product</h1>
+                                                    <h1 class="cr3">Spinach Pizza</h1>
+                                                    <p class="cr4">Indulge in the exquisite Spinach Pizza, featuring a golden crust topped with vibrant spinach, velvety cheese, and tangy tomato sauce, all enhanced with fragrant olive oil, garlic, and basil for a symphony of classic pizza perfection.</p>
+                                                    <p class="cr1"><i class="fa-solid fa-peso-sign"></i>&nbsp;280</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="container text-center">
+                                        <div class="row">
+                                            <div class="col-sm-6 image">
+                                                <div class="item">
+                                                    <img src="./Menu-Images/Menu-Assets/newest-prod3.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="details">
+                                                    <h2>Try our newest product</h2>
+                                                    <h1 class="cr3">Lasagna</h1>
+                                                    <p class="cr4">Where tender noodles embrace seasoned ground meat, tomato sauce, and creamy ricotta. Melted mozzarella and Parmesan weave a gooey spell. Herbs dance, sautéed veggies add freshness, all crowned with velvety bechamel.</p>
+                                                    <p class="cr1"><i class="fa-solid fa-peso-sign"></i>&nbsp;160</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev fa fa-angle-left" href="#sliderproduct" role="button" data-slide="prev"></a>
+                                <a class="carousel-control-next fa fa-angle-right" href="#sliderproduct" role="button" data-slide="next"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =======================================================
+        =============   H A M B U R G E R   M E N U    =============
+        ============================================================-->
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./menu-page.html"><li>Menu</li></a>
+                <a href="./contact-page.html"><li>Contact</li></a>
+                <a href="./about-page.html"><li>About</li></a>
+            </ul>
+        </div>
+
+        <!-- =====================================================================
+        =============   N A V I G A T I O N     C O N T A I N E R    =============
+        ==========================================================================-->
+        <div class="navigation-container">
+            <div class="nav-item">
+                <a href="./index.html" class="slide-button">
+                    <img src="./Menu-Images/Menu-Assets/btn-home.png" alt="">
+                    <span class="slide-button-info">Home</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="./menu-page.html" class="slide-button">
+                    <img src="./Menu-Images/Menu-Assets/btn-menu.png" alt="">
+                    <span class="slide-button-info">Menu</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="./about-page.html" class="slide-button">
+                    <img src="./Menu-Images/Menu-Assets/btn-about.png" alt="">
+                    <span class="slide-button-info">About</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="./contact-page.html" class="slide-button">
+                    <img src="./Menu-Images/Menu-Assets/btn-contact.png" alt="">
+                    <span class="slide-button-info">Contact</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#top-again" class="back-to-top">
+                    <img src="./Menu-Images/Menu-Assets/btn-top.png" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===================================================================================
+    =============   T A B L E T     M O B I L E     N E W E S T     F O O D    =============
+    ========================================================================================-->
+    <div class="tablet-mobile-landpage" id="top-again">
+        <div class="tablet-mobile-bg">
+            <div class="tablet-mobile-bg-product">
+                <div class="container product">
+                    <div class="row">
+                        <div id="tablet-mobile-slider" class="carousel slide " data-ride="carousel" data-interval="false">
+                            <ol class="carousel-indicators">
+                                <li data-target="#tablet-mobile-slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#tablet-mobile-slider" data-slide-to="1"></li>
+                                <li data-target="#tablet-mobile-slider" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox" data-interval="false">
+                                <div class="carousel-item active">
+                                    <div class="container text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="item-two">
+                                                    <img src="./Menu-Images/Menu-Assets/newest-prod1.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="details">
+                                                    <h2>Try our newest product</h2>
+                                                    <h1 class="cr3">Shrimp Gambas</h1>
+                                                    <p class="cr4">A classic delight, features plump shrimp, garlic, and vibrant veggies sizzling on a hot plate. The perfect blend of paprika, cayenne, and a dash of citrusy lemon or calamansi creates an original explosion flavors that embodies.</p>
+                                                    <p class="cr1"><i class="fa-solid fa-peso-sign"></i>&nbsp;299</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="carousel-item">
+                                    <div class="container text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="item-two">
+                                                    <img src="./Menu-Images/Menu-Assets/newest-prod2.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="details">
+                                                    <h2>Try our newest product</h1>
+                                                    <h1 class="cr3">Spinach Pizza</h1>
+                                                    <p class="cr4">Indulge in the exquisite Spinach Pizza, featuring a golden crust topped with vibrant spinach, velvety cheese, and tangy tomato sauce, all enhanced with fragrant olive oil, garlic, and basil for a symphony of classic pizza perfection.</p>
+                                                    <p class="cr1"><i class="fa-solid fa-peso-sign"></i>&nbsp;280</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="carousel-item">
+                                    <div class="container text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="item-two">
+                                                    <img src="./Menu-Images/Menu-Assets/newest-prod3.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="details">
+                                                    <h2>Try our newest product</h2>
+                                                    <h1 class="cr3">Lasagna</h1>
+                                                    <p class="cr4">Where tender noodles embrace seasoned ground meat, tomato sauce, and creamy ricotta. Melted mozzarella and Parmesan weave a gooey spell. Herbs dance, sautéed veggies add freshness, all crowned with velvety bechamel.</p>
+                                                    <p class="cr1"><i class="fa-solid fa-peso-sign"></i>&nbsp;160</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+    
+                                <a class="carousel-control-prev fa fa-angle-left" href="#tablet-mobile-slider" role="button" data-slide="prev"></a>
+                                <a class="carousel-control-next fa fa-angle-right" href="#tablet-mobile-slider" role="button" data-slide="next"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============================================================================
+        =============   T A B L E T     M O B I L E     H A M B U R G E R    =============
+        ==================================================================================-->
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./menu-page.html"><li>Menu</li></a>
+                <a href="./contact-page.html"><li>Contact</li></a>
+                <a href="./about-page.html"><li>About</li></a>
+            </ul>
+        </div>
+
+        <!-- ===============================================================================
+        =============   T A B L E T     M O B I L E     N A V I G A T I O N    =============
+        ====================================================================================-->
+        <div class="navigation-container">
+            <div class="nav-item">
+                <a href="./index.html" class="slide-button">
+                    <img src="./Menu-Images/Menu-Assets/btn-home.png" alt="">
+                    <span class="slide-button-info">Home</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="./menu-page.html" class="slide-button">
+                    <img src="./Menu-Images/Menu-Assets/btn-menu.png" alt="">
+                    <span class="slide-button-info">Menu</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="./about-page.html" class="slide-button">
+                    <img src="./Menu-Images/Menu-Assets/btn-about.png" alt="">
+                    <span class="slide-button-info">About</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="./contact-page.html" class="slide-button">
+                    <img src="./Menu-Images/Menu-Assets/btn-contact.png" alt="">
+                    <span class="slide-button-info">Contact</span>
+                </a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#top-again" class="back-to-top">
+                    <img src="./Menu-Images/Menu-Assets/btn-top.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- =====================================================
+    =============   P A G E     D I V I D E R    =============
+    ==========================================================-->
+        <div class="page-divider"></div>
+
+    <!-- ===========================================================
+    =============   S E L E C T I O N       M E N U    =============
+    ================================================================-->
+    <div class="grand-parent-container-one">
+        <div class="header-container-one">
+            <h2>Select your preferred order from the categories.</h2>
+            <h1>Coco's Selections</h1>
+        </div>
+        <div class="selection-menu-container">
+
+            <!-- ===============================================================
+            =============   R I C E     M E A L S       M E N U    =============
+            ====================================================================-->
+            <div class="menu-containers">
+                <div class="Box">
+                    <div class="FlipBox">
+                        <div class="Front">
+                            <span>M</span>
+                            <span>E</span>
+                            <span>A</span>
+                            <span>L</span>
+                            <span>S</span>
+                        </div>
+                        <div class="Back" id="meals-grid">
+                            <a href="#rice-meals-id">Rice Meals</a>
+                            <a href="#noodles-soup-id">Soups</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =====================================================
+            =============   D R I N K S       M E N U    =============
+            ==========================================================-->
+            <div class="menu-containers">
+                <div class="Box">
+                    <div class="FlipBox">
+                        <div class="Front">
+                            <span>D</span>
+                            <span>R</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>K</span>
+                            <span>S</span>
+                        </div>
+                        <div class="Back" id="drinks-grid">
+                            <a href="#milk-tea-id" class="tea">Milk&nbsp;&#x26;&nbsp;Tea</a>
+                            <a href="#real-fruit-tea-id" class="tea">Real Fruits&nbsp;&#x26;&nbsp;Tea</a>
+                            <a href="#iced-coffee-id" class="tea">Iced Coffee</a>
+                            <a href="#soda-pops" class="tea">SODA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===================================================
+            =============   S N A C K S     M E N U    =============
+            ========================================================-->
+            <div class="menu-containers">
+                <div class="Box">
+                    <div class="FlipBox">
+                        <div class="Front">
+                            <span>S</span>
+                            <span>N</span>
+                            <span>A</span>
+                            <span>C</span>
+                            <span>K</span>
+                            <span>S</span>
+                        </div>
+                        <div class="Back" id="snacks-grid">
+                            <a href="#pizza-id">Pizza</a>
+                            <a href="#macau-egg-id">Macau Egg Tarte</a>
+                            <a href="#others-id">Others</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Menu-Images/Menu-Assets/chinese-banner.png" alt="" class="left-side">
+        <img src="./Menu-Images/Menu-Assets/chinese-banner.png" alt="" class="right-side">
+    </div>
+
+    <!-- =====================================================
+    =============   P A G E     D I V I D E R    =============
+    ==========================================================-->
+    <div class="page-divider"></div>
+
+    <!-- =========================================================
+    =============   R I C E     M E A L S   [ 1 ]    =============
+    ==============================================================-->
+    <div class="grand-parent-container-two" id="rice-meals-id">
+        <div class="header-container-two">
+            <h2>Coco's Rice Meals</h2>
+        </div>
+        <div class="wrapper-two">
+            <div class="card-best">
+                <div class="img-container">
+                    <img src="./Menu-Images/Menu-Meals/Pork-Teriyaki.png" alt="" class="salmon-new" id="teriyaki-img">
+                    <span class="name-meal" id="teriyaki-heading">Pork Teriyaki</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="banner-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banner">
+                </div>
+                <div class="card-best-details">
+                    <div class="card-details-flip">
+                        <img src="./Menu-Images/Menu-Meals/Pork-Teriyaki.png" alt="" class="flip-img" id="teriyaki-inside">
+                        <h1 class="sal1" id="teriyaki-name">Pork Teriyaki</h1>
+                        <h3 class="salpri" id="teriyaki-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;99</h3>
+                    </div>
+                    <div class="card-ingridients-left-flip">
+                        <p id="teriyaki-info">Savor the exquisite blend of sweet and savory in our Pork Teriyaki, featuring succulent pork glazed with a perfect harmony of soy sauce, mirin, brown sugar (or honey), garlic, and ginger. Garnished with fresh green onions and served over a bed of rice, this dish promises a delightful journey through Japanese-inspired flavors that will leave your taste buds craving more.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container">
+                <div class="card-meals">
+                    <div class="img-container-meals" id="right-transi">
+                        <img src="./Menu-Images/Menu-Meals/Beef-Tapa.png" alt="" class="beef-tapa" id="tapa-img">
+                        <span class="name-mealed" id="tapa-heading">Beef Tapa</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Meals/Beef-Tapa.png" alt="" class="flip-meals" id="tapa-inside">
+                            <h2 class="sal2" id="tapa-name">Beef Tapa</h2>
+                            <h4 class="salpri2" id="tapa-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;99</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="tapa-info">Indulge in the rich flavors of our Beef Tapa, featuring succulent beef slices marinated in a tantalizing blend of soy sauce, vinegar, garlic, sugar, and black pepper. Served with aromatic white rice, a perfectly fried egg, and adorned with sautéed onions and fresh green onions, this dish is a culinary masterpiece that promises a symphony of savory delights on every plate.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals">
+                    <div class="img-container-meals" id="right-transi">
+                        <img src="./Menu-Images/Menu-Meals/Tonkatsu.png" alt="" class="beef-tapa" id="tonkatsu-img">
+                        <span class="name-mealed" id="tonkatsu-heading">Tonkatsu</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Meals/Tonkatsu.png" alt="" class="flip-meals" id="tonkatsu-inside">
+                            <h2 class="sal2" id="tonkatsu-name">Tonkatsu</h2>
+                            <h4 class="salpri2" id="tonkatsu-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;99</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="tonkatsu-info">Satisfy your cravings with our Tonkatsu, featuring tender pork cutlets coated in a crisp layer of panko breadcrumbs and golden-fried to perfection. Served with a side of fluffy rice, a lusciously fried egg, and a bed of fresh cabbage, this Japanese classic is complete with a drizzle of savory brown Tonkatsu sauce, sprinkled with sesame seeds and green onions for an unforgettable dining experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================
+    =============   R I C E     M E A L S   [ 2 ]    =============
+    ==============================================================-->
+    <div class="grand-parent-container-three" id="meals-meals">
+        <div class="wrapper-three">
+            <div class="card-best-two">
+                <div class="img-container-two" id="left-transi">
+                    <img src="./Menu-Images/Menu-Meals/Kare-Kare.png" alt="" class="kare-kare-new" id="kare-bagnet-img">
+                    <span class="karekare-meal" id="kare-bagnet-heading">Kare Kare Bagnet</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="bannered-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banners">
+                </div>
+                <div class="card-best-details-two">
+                    <div class="card-details-flip-two">
+                        <img src="./Menu-Images/Menu-Meals/Kare-Kare.png" alt="" class="flip-img-two" id="kare-bagnet-inside">
+                        <h1 class="bagnet1" id="kare-bagnet-name">Kare Kare Bagnet</h1>
+                        <h3 class="bagnetdesc" id="kare-bagnet-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;199</sp>
+                    </div>
+                    <div class="card-ingridients-left-flip-two">
+                        <p id="kare-bagnet-info">Experience a culinary adventure with our KareKare Bagnet, a shared delight blending crispy bagnet with an array of fresh vegetables, bathed in our delectable peanut sauce and complemented by a touch of bagoong. Indulge in the harmonious symphony of textures and flavors, as the crispy bagnet meets the savory perfection of peanut-infused richness, capturing the essence of Filipino cuisine in every shared moment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container-two">
+                <div class="card-meals-two">
+                    <div class="img-container-meals-two" id="left-transi">
+                        <img src="./Menu-Images/Menu-Meals/Pork-Sisig.png" alt="" class="once-meals" id="sisig-img">
+                        <span class="name-mealed" id="sisig-heading">Sizzling Sisig</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannereds">
+                    </div>
+                    <div class="meals-details-two">
+                        <div class="meals-flip-two">
+                            <img src="./Menu-Images/Menu-Meals/Pork-Sisig.png" alt="" class="twice-meals" id="sisig-inside">
+                            <h2 class="sal4" id="sisig-name">Sizzling Sisig</h2>
+                            <h4 class="salpri4" id="sisig-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;99/199</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left-two">
+                            <p id="sisig-info">Embark on a sizzling culinary adventure with our Sisig, available in a Solo indulgence or perfect for Sharing. Succulent pork, fluffy rice, and a perfectly fried egg are brought to life with a tantalizing array of condiments, all expertly sizzled together and served with a drizzle of cooking oil, ensuring a flavor-packed experience that captures the heart of this Filipino classic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals-two">
+                    <div class="img-container-meals-two" id="left-transi">
+                        <img src="./Menu-Images/Menu-Meals/Hashbrown-3pcs.png" alt="" class="once-meals" id="hashbrown-img">
+                        <span class="name-mealed" id="hashbrown-heading">Hash Brown 3Pcs</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannereds">
+                    </div>
+                    <div class="meals-details-two">
+                        <div class="meals-flip-two">
+                            <img src="./Menu-Images/Menu-Meals/Hashbrown-3pcs.png" alt="" class="twice-meals" id="hashbrown-inside">
+                            <h2 class="sal5" id="hashbrown-name">Hash Brown</h2>
+                            <h4 class="salpri5" id="hashbrown-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;100</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left-two">
+                            <p id="hashbrown-info">Indulge in the delectable crunch of our expertly crafted trio of hash browns, each perfectly golden and seasoned with a blend of savory shredded potatoes. Every bite promises an irresistible experience, adding a delightful touch to any meal. The golden perfection of these three hash browns ensures a satisfying and flavorful accompaniment that will leave your taste buds craving more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================
+    =============   R I C E     M E A L S   [ 3 ]    =============
+    ==============================================================-->
+    <div class="grand-parent-container-two" id="third-page-meals">
+        <div class="wrapper-two">
+            <div class="card-best">
+                <div class="img-container">
+                    <img src="./Menu-Images/Menu-Meals/Tokwa-Bagnet.png" alt="" class="salmon-new" id="tokwa-img">
+                    <span class="sirlion-name" id="tokwa-heading">Tokwa't Bagnet</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="banner-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banner">
+                </div>
+                <div class="card-best-details">
+                    <div class="card-details-flip">
+                        <img src="./Menu-Images/Menu-Meals/Tokwa-Bagnet.png" alt="" class="flip-img" id="tokwa-inside">
+                        <h1 class="sal6" id="tokwa-name">Tokwa't Bagnet</h1>
+                        <h3 class="salpri6" id="tokwa-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;160</h3>
+                    </div>
+                    <div class="card-ingridients-left-fliped">
+                        <p id="tokwa-info">Delight in the rich flavors of our Tokwat Bagnet Tampuluts/Ulam, featuring crispy tokwa and succulent bagnet bathed in a delectable sauce crafted from the perfect blend of soy sauce, vinegar, garlic, onions, and pepper. This enticing dish promises a harmonious fusion of textures and tastes, creating a culinary experience that captures the essence of Filipino cuisine.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container">
+                <div class="card-meals">
+                    <div class="img-container-meals" id="right-transi">
+                        <img src="./Menu-Images/Menu-Meals/Tocino.png" alt="" class="beef-tapa" id="tocino-img">
+                        <span class="name-mealed" id="tocino-heading">Tocino</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Meals/Tocino.png" alt="" class="flip-meals" id="tocino-inside">
+                            <h2 class="sal7" id="tocino-name">Tocino</h2>
+                            <h4 class="salpri7" id="tocino-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;99</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="tocino-info">Savor the perfect blend of sweet and savory with our Tocino ensemble, featuring succulent pork meat marinated to perfection. Paired with aromatic rice, a sunnyside-up egg, assorted veggies, and infused with the rich flavors of garlic, soy sauce, and pepper, this dish can be elevated with an optional add-on of extra pork meat for an even more satisfying culinary experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals">
+                    <div class="img-container-meals" id="right-transi">
+                        <img src="./Menu-Images/Menu-Meals/New-Salmon-Rice.png" alt="" class="beef-tapa" id="salmon-img">
+                        <span class="name-mealed" id="salmon-heading">Salmon Rice</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Meals/New-Salmon-Rice.png" alt="" class="flip-meals" id="salmon-inside">
+                            <h2 class="sal7" id="salmon-name">Salmon Rice</h2>
+                            <h4 class="salpri2" id="salmon-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;250</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="salmon-info">Immerse yourself in the exquisite flavors of our Salmon Rice, featuring a perfectly grilled salmon fillet nestled on a bed of fluffy rice. Infused with the aromatic blend of oil, garlic, lemon juice, pepper, fresh herbs, and a touch of soy sauce, this dish promises a symphony of tastes that will transport your palate to a culinary paradise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================
+    =============   R I C E     M E A L S   [ 4 ]    =============
+    ==============================================================-->
+    <div class="grand-parent-container-three" id="meals-meals">
+        <div class="wrapper-three">
+            <div class="card-best-two">
+                <div class="img-container-two" id="left-transi">
+                    <img src="./Menu-Images/Menu-Meals/Burger-Steak.png" alt="" class="kare-kare-new" id="burger-steak-img">
+                    <span class="name-meal" id="burger-steak-heading">Burger Steak</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="bannered-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banners">
+                </div>
+                <div class="card-best-details-two">
+                    <div class="card-details-flip-two">
+                        <img src="./Menu-Images/Menu-Meals/Burger-Steak.png" alt="" class="flip-img-two" id="burger-steak-inside">
+                        <h1 class="sal8" id="burger-steak-name">Burger Steak</h1>
+                        <h3 class="salpri8" id="burger-steak-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;110</sp>
+                    </div>
+                    <div class="card-ingridients-left-flip-twoo">
+                        <p id="burger-steak-info">Coco's Asian burger steak features juicy beef patties infused with Asian spices, bathed in a luscious gravy sauce that harmonizes soy, ginger, and garlic notes. Nestled on a cushion of rice, this fusion creation elevates the classic burger steak with a rich and savory twist.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container-two">
+                <div class="card-meals-two">
+                    <div class="img-container-meals-two" id="left-transi">
+                        <img src="./Menu-Images/Menu-Meals/Porkchop-Rice.png" alt="" class="once-meals" id="porkchop-img">
+                        <span class="name-mealed" id="porkchop-heading">Porkchop Rice</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannereds">
+                    </div>
+                    <div class="meals-details-two">
+                        <div class="meals-flip-two">
+                            <img src="./Menu-Images/Menu-Meals/Porkchop-Rice.png" alt="" class="twice-meals" id="porkchop-inside">
+                            <h2 class="sal9" id="porkchop-name">Porkchop Rice</h2>
+                            <h4 class="salpri9" id="porkchop-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;99</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left-two">
+                            <p id="porkchop-info">Coco's Asian porkchop rice is a savory symphony of flavors, featuring tender, marinated pork chops grilled to perfection and served atop a bed of fragrant jasmine rice. The dish is elevated with a delectable blend of Asian spices, creating a mouthwatering fusion that will transport your taste buds to culinary nirvana.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals-two">
+                    <div class="img-container-meals-two" id="left-transi">
+                        <img src="./Menu-Images/Menu-Meals/Sirlion-Beef-Steak.png" alt="" class="once-meals" id="beef-steak-img">
+                        <span class="name-mealed" id="beef-steak-heading">Premium Beef Steak</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannereds">
+                    </div>
+                    <div class="meals-details-two">
+                        <div class="meals-flip-two">
+                            <img src="./Menu-Images/Menu-Meals/Sirlion-Beef-Steak.png" alt="" class="twice-meals" id="beef-steak-inside">
+                            <h2 class="sal9" id="beef-steak-name">Premium Beef Steak</h2>
+                            <h4 class="salpri9" id="beef-steak-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;215</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left-two">
+                            <p id="beef-steak-info">Coco's Asian Premium Beef Steak features tender slices of high-quality beef, expertly grilled and seasoned with a blend of Asian spices for a flavorful experience. The dish offers a sophisticated culinary exploration, delivering a satisfying and well-executed steak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================
+    =============   R I C E     M E A L S   [ 5 ]    =============
+    ==============================================================-->
+    <div class="grand-parent-container-two" id="third-page-meals">
+        <div class="wrapper-two">
+            <div class="card-best">
+                <div class="img-container">
+                    <img src="./Menu-Images/Menu-Meals/Chicken-Wings.png" alt="" class="salmon-new" id="chicken-img">
+                    <span class="sirlion-name" id="chicken-heading">Chicken Wings</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="banner-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banner">
+                </div>
+                <div class="card-best-details">
+                    <div class="card-details-flip">
+                        <img src="./Menu-Images/Menu-Meals/Chicken-Wings.png" alt="" class="flip-img" id="chicken-inside">
+                        <h1 class="sal6" id="chicken-name">Chicken Wings</h1>
+                        <h3 class="salpri6" id="chicken-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;250</h3>
+                    </div>
+                    <div class="card-ingridients-left-fliped">
+                        <p id="chicken-info">Immerse in Coco's Chicken Wings—an exquisite blend of succulent chicken wings seasoned with black pepper, garlic, onion, and paprika, coated in all-purpose flour and butter for a crispy finish. Served with delectable condiments, optional zesty lemon juice, and adorned with fresh green onions, these wings redefine the art of chicken, promising a delightful culinary journey at Coco's.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container">
+                <div class="card-meals">
+                    <div class="img-container-meals" id="right-transi">
+                        <img src="./Menu-Images/Menu-Meals/Thai-Beef-Curry.png" alt="" class="beef-tapa" id="thai-beef-img">
+                        <span class="name-mealed" id="thai-beef-heading">Thai Beef Curry</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Meals/Thai-Beef-Curry.png" alt="" class="flip-meals" id="thai-beef-inside">
+                            <h2 class="sal7" id="thai-beef-name">Thai Beef Curry</h2>
+                            <h4 class="salpri7" id="thai-beef-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;120</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="thai-beef-info">Coco's Asian Thai Beef Curry is a rich and aromatic dish featuring tender beef slices simmered in a flavorful Thai curry sauce, boasting a perfect balance of spices and coconut milk for an authentic and satisfying dining experience. The dish is a harmonious blend of succulent meat and vibrant curry flavors, delivering a delicious taste of Thailand in every bite.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals">
+                    <div class="img-container-meals" id="right-transi">
+                        <img src="./Menu-Images/Menu-Meals/Hungarian-Sausage.png" alt="" class="beef-tapa" id="hungarian-img">
+                        <span class="name-mealed" id="hungarian-heading">Hungarian Sausage</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Meals/Hungarian-Sausage.png" alt="" class="flip-meals" id="hungarian-inside">
+                            <h2 class="sal7" id="hungarian-name">Hungarian Sausage</h2>
+                            <h4 class="salpri2" id="hungarian-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;120</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="hungarian-info">Coco's Asian Hungarian Sausage is a delightful fusion of Eastern and Central European flavors, blending the robust spices of traditional Hungarian sausages with the aromatic, umami-rich essence of Asian cuisine. Each savory bite offers a harmonious dance of paprika-infused goodness and a hint of exotic spices, creating a uniquely satisfying culinary experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ===========================================================
+    =============   B R E A K   F A S T     R I C E    =============
+    ================================================================-->
+    <div class="grand-parent-container-four">
+        <div class="header-container-four" id="hide-breakfast">
+            <h2 id="breakfast">Coco's Breakfast</h2>
+        </div>
+        <div class="wrapper-four">
+            <div class="noodles-container">
+                <div class="img-noodles-container">
+                    <img src="./Menu-Images/Menu-Meals/All-Day-Breakfast.png" alt="" class="nowdle" id="allday-img">
+                    <span class="name-boodles" id="allday-heading">All Day Breakfast</span>
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="nood-banner">
+                </div>
+                <div class="noodles-details">
+                    <div class="noodles-flip-info">
+                        <img src="./Menu-Images/Menu-Meals/All-Day-Breakfast.png" alt="" class="nowdles" id="allday-inside">
+                        <h2 id="allday-name">All Day Breakfast</h2>
+                        <h4 id="allday-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;250</h4>
+                    </div>
+                    <div class="noodles-info-ingridients-left">
+                        <p id="allday-info">Start your day right with our all-day breakfast, a delightful combination of golden French toast, crispy hash browns, fluffy scrambled eggs, and savory hotdog. This hearty and flavorful morning feast offers a classic breakfast experience with a delicious Asian twist, catering to your cravings and ensuring a satisfying start to your day.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="noodles-container">
+                <div class="img-noodles-container-two">
+                    <img src="./Menu-Images/Menu-Meals/Jumbo-Hotdog.png" alt="" class="nowdle" id="hotdog-img">
+                    <span class="name-boodles" id="hotdog-heading">Jumbo TJ Hotdog</span>
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="nood-banner">
+                </div>
+                <div class="noodles-details">
+                    <div class="noodles-flip-info">
+                        <img src="./Menu-Images/Menu-Meals/Jumbo-Hotdog.png" alt="" class="nowdles" id="hotdog-inside">
+                        <h2 id="hotdog-name">Jumbo TJ Hotdog</h2>
+                        <h4 id="hotdog-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;80</h4>
+                    </div>
+                    <div class="noodles-info-ingridients-left">
+                        <p id="hotdog-info">Experience a hearty and satisfying meal with our Jumbo TJ Hotdog Rice, featuring a succulent jumbo TJ hotdog served over a bed of rice and crowned with a perfectly fried egg. Complemented by a colorful medley of mixed veggies and drizzled with a combination of catsup and savory gravy, this dish promises a flavorful journey that will satisfy your cravings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =======================================================
+    =============   N O O D L E S       S O U P    =============
+    ============================================================-->
+    <div class="grand-parent-container-four" id="noodles-soup-id">
+        <div class="header-container-four">
+            <h2>Coco's Noodles & Soup</h2>
+        </div>
+        <div class="wrapper-four">
+            <div class="noodles-container">
+                <div class="img-noodles-container">
+                    <img src="./Menu-Images/Menu-Meals/Beef-Noodles.png" alt="" class="nowdle" id="beef-soup-img">
+                    <span class="name-boodles" id="beef-soup-heading">Beef Noodles Soup</span>
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="nood-banner">
+                </div>
+                <div class="noodles-details">
+                    <div class="noodles-flip-info">
+                        <img src="./Menu-Images/Menu-Meals/Beef-Noodles.png" alt="" class="nowdles" id="beef-soup-inside">
+                        <h2 id="beef-soup-name">Beef Noodles Soup</h2>
+                        <h4 id="beef-soup-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;99</h4>
+                    </div>
+                    <div class="noodles-info-ingridients-left">
+                        <p id="beef-soup-info">Indulge in the comforting warmth of our Beef Noodle Soup, where tender beef slices and perfectly cooked noodles swim in a rich beef broth. Infused with the aromatic trio of green onions, garlic, and ginger, this bowl is elevated with the savory touch of soy sauce and adorned with fresh, crisp leafy greens for a delightful and satisfying culinary experience.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="noodles-container">
+                <div class="img-noodles-container-two">
+                    <img src="./Menu-Images/Menu-Meals/Wonton-Noodles.png" alt="" class="nowdle" id="wonton-soup-img">
+                    <span class="name-boodles" id="wonton-soup-heading">Wonton Soup</span>
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="nood-banner">
+                </div>
+                <div class="noodles-details">
+                    <div class="noodles-flip-info">
+                        <img src="./Menu-Images/Menu-Meals/Wonton-Noodles.png" alt="" class="nowdles" id="wonton-soup-inside">
+                        <h2 id="wonton-soup-name">Wonton Soup</h2>
+                        <h4 id="wonton-soup-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;99</h4>
+                    </div>
+                    <div class="noodles-info-ingridients-left">
+                        <p id="wonton-soup-info">Savor our Wonton Soup, a comforting bowl filled with delicate wonton wrappers, either brimming with succulent pork or shrimp. Infused with the aromatic trio of green onions, garlic, and ginger, this savory delight swims in a flavorful chicken broth, seasoned to perfection with soy sauce, white pepper, salt, and a hint of sugar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================
+    =============   P A G E     D I V I D E R    =============
+    ==========================================================-->
+    <div class="page-divider"></div>
+
+    <!-- =========================================================
+    =============   R I C E     M E A L S   [ 1 ]    =============
+    ==============================================================-->
+    <div class="grand-parent-container-five" id="milk-tea-id">
+        <div class="header-container-five">
+            <h2>Coco's Milk & Tea</h2>
+        </div>  
+        <div class="container-fruitea Swiper">
+            <div class="slide-container">
+                <div class="card-fruitea-wrapper swiper-wrapper">
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Class-Style-Milktea.png" alt="" class="tea-classic">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Classic HK Style</h3>
+                            <h4 class="type">M1 - <i class="fa-solid fa-peso-sign"></i>&nbsp;119</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle()" class="btn-hides" id="expand"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Embark on a flavorful journey with our tea menu, featuring a harmonious blend of rich teas, creamy milk, and the perfect touch of sugar. Choose between a comforting hot brew or a refreshing iced version, complete with chewy tapioca pearls and crisp ice cubes for a delightful twist on traditional favorites.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Oreo-Cheescake-Milktea.png" alt="" class="tea-classic">
+                            <img src="./Menu-Images/Menu-Assets/Best-seller-drinks.png" alt="" class="banner-best-tea">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Oreo Cheesecake</h3>
+                            <h4 class="type">M3 - <i class="fa-solid fa-peso-sign"></i>&nbsp;139</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle2()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder2" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Satisfy your sweet cravings with our Oreo Cheesecake (M3). Crafted from a delectable blend of crushed Oreo cookies and butter for the crust, topped with a velvety mix of cream cheese, sugar, and a hint of vanilla extract.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Purple-Taro-Milktea.png" alt="" class="tea-classic">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Purple Taro</h3>
+                            <h4 class="type">M2 - <i class="fa-solid fa-peso-sign"></i>&nbsp;119</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle3()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder3" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Indulge in the exotic allure of our Purple Taro Milktea (M2). Immerse yourself in the velvety fusion of taro, tea, and milk, perfectly sweetened to your liking, and served with optional ice cubes for a refreshing chill, and delightful tapioca pearls for an added burst of texture.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Strawberry-Pink-Milktea.png" alt="" class="tea-classic">
+                            <img src="./Menu-Images/Menu-Assets/Best-seller-drinks.png" alt="" class="banner-best-tea">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Strawbery Pink Milk</h3>
+                            <h4 class="type">M9 - <i class="fa-solid fa-peso-sign"></i>&nbsp;169</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle4()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder4" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Savor the sweetness of summer with our Strawberry Pink Milk (M9). Immerse yourself in the delightful blend of fresh strawberries, creamy milk, and a touch of sugar or sweetener, served over ice cubes for a refreshing and rosy-hued treat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Taiwan-Brown-Milktea.png" alt="" class="tea-classic">
+        
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Taiwan Brown Sugar</h3>
+                            <h4 class="type">M5 - <i class="fa-solid fa-peso-sign"></i>&nbsp;159</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle5()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder5" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Delight in the authentic taste of Taiwan with our Taiwan Brown Sugar (M5). Immerse yourself in the rich blend of sugar-infused milk tea, complemented by the chewy goodness of tapioca pearls. This classic Taiwanese beverage promises a sweet and satisfying experience in every sip.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Chocolate-Milktea.png" alt="" class="tea-classic">
+                            <img src="./Menu-Images/Menu-Assets/Best-seller-drinks.png" alt="" class="banner-best-tea">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Chocolate</h3>
+                            <h4 class="type">M7 - <i class="fa-solid fa-peso-sign"></i>&nbsp;119</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle6()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder6" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Satisfy your chocolate cravings with our Chocolate Milktea (M7). Immerse yourself in the rich blend of cocoa-infused tea, sugar, and creamy milk for a decadent and indulgent treat that will delight your senses in every sip.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Mango-Matcha-Milktea.png" alt="" class="tea-classic">
+
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Mango Matcha</h3>
+                            <h4 class="type">M6 - <i class="fa-solid fa-peso-sign"></i>&nbsp;169</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle7()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder7" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Indulge in the tropical bliss of our Mango Matcha (M6), where vibrant matcha powder meets luscious mango chunks in a creamy embrace of milk, perfectly sweetened to your liking. This refreshing fusion is a symphony of flavors, offering a taste of paradise in every sip.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Milky-Milo-Milktea.png" alt="" class="tea-classic">
+                            <img src="./Menu-Images/Menu-Assets/Best-seller-drinks.png" alt="" class="banner-best-tea">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Milky Milo</h3>
+                            <h4 class="type">M8 - <i class="fa-solid fa-peso-sign"></i>&nbsp;119</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle8()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder8" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Experience the nostalgic delight of our Milky Milo (M8). Indulge in the perfect harmony of Milo powder, tea, creamy milk, and just the right touch of sugar, creating a comforting and flavorful beverage that harks back to cherished childhood memories.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Matcha-Cheescake-Milktea.png" alt="" class="tea-classic">
+        
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Matcha Cheesecake</h3>
+                            <h4 class="type">M4 - <i class="fa-solid fa-peso-sign"></i>&nbsp;129</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle9()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder9" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Elevate your dessert experience with our Matcha Cheesecake (M4), a luscious creation featuring the perfect balance of matcha powder, cream cheese, sugar, and sour cream. Topped with a cloud-like layer of whipped cream, this indulgent treat offers a harmonious fusion of rich, velvety textures and the distinct, earthy flavors of matcha.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+        </div>
+    </div>
+    <div class="page-divider"></div>
+    <!-- ICED COFFEE ICED COFFEE ICED COFFEE ICED COFFEE ICED COFFEE ICED COFFEE -->
+    <div class="iced-coffee-grand-container" id="iced-coffee-id">
+        <div class="iced-coffee-header-container">
+            <h2>Coco's Iced Coffee</h2>
+        </div>
+        <div class="coffee-container">
+            <div class="left-coffee">
+                <div class="left-coffee-1">
+                    <h1>Coffee Lattee</h1>
+                    <p>Satisfy your coffee cravings with our Iced Coffee Latte. Indulge in the perfect blend of rich brewed coffee, creamy milk, and your choice of sweetener, served over ice cubes for a cool and invigorating pick-me-up.</p>
+                    <h2><i class="fa-solid fa-peso-sign"></i>&nbsp;39</h2>
+                </div>
+                <div class="left-coffee-2">
+                    <h1>Coffee Hazelnut</h1>
+                    <p>Experience your cravings delight of our Iced Coffee Hazelnut. Enjoy the bold blend of brewed coffee, velvety hazelnut syrup, creamy milk, sweetener, and ice cubes, creating a refreshing coffee sensation.</p>
+                    <h2><i class="fa-solid fa-peso-sign"></i>&nbsp;39</h2>
+                </div>
+            </div>
+            <div class="mid-coffee">
+                <img src="./Menu-Images/Menu-Drinks/Iced-Coffee.png" alt="">
+            </div>
+            <div class="right-coffee">
+                <div class="right-coffee-1">
+                    <h1>Coffee Caramel</h1>
+                    <p>Treat yourself to the sweet and bold essence of Iced Coffee Caramel. Enjoy the luscious combination of brewed coffee, caramel syrup, creamy milk, and your preferred sweetener, served over ice cubes.</p>
+                    <h2><i class="fa-solid fa-peso-sign"></i>&nbsp;39</h2>
+                </div>
+                <div class="right-coffee-2">
+                    <h1>Coffee Americano</h1>
+                    <p>Quench your coffee cravings with our Iced Coffee Americano, a refreshing delight crafted from expertly brewed coffee poured over ice cubes. Savor the bold and invigorating of this classic drinks.</p>
+                    <h2><i class="fa-solid fa-peso-sign"></i>&nbsp;39</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-divider"></div>
+    <!-- REAL FRUIT  REAL FRUIT REAL FRUIT  REAL FRUIT  REAL FRUIT  REAL FRUIT  REAL FRUIT  REAL FRUIT -->
+    <div class="grand-parent-container-six" id="real-fruit-tea-id">
+        <div class="header-container-six">
+            <h2>Coco's Real Fruit & Tea</h2>
+        </div>
+        <div class="container-fruitea Swiper">
+            <div class="slide-container">
+                <div class="card-fruitea-wrapper swiper-wrapper">
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Lemon Green Tea - F1.png" alt=""  class="tea-classic">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Lemon Green Tea</h3>
+                            <h4 class="type">F1 - <i class="fa-solid fa-peso-sign"></i>&nbsp;99</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle10()" class="btn-hides" id="expand"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder10" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Quench your thirst with our invigorating Lemon Green Tea (F1). Experience the crisp fusion of green tea and zesty lemon, perfectly sweetened with honey or sugar, and served over ice cubes for a revitalizing and refreshing beverage that captures the essence of summer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Lemon Black Tea - F2.png" alt="" class="tea-classic">
+                            
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Lemon Black Tea</h3>
+                            <h4 class="type">F2 - <i class="fa-solid fa-peso-sign"></i>&nbsp;99</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle11()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder11" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Refresh your senses with our Lemon Black Tea (F2), a harmonious blend of bold black tea leaves, fresh lemon, and your choice of sweetener, served over ice cubes for a cool and invigorating experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Strawberry Lemon Tea - F3.png" alt=""  class="tea-classic">
+                            <img src="./Menu-Images/Menu-Assets/Best-seller-drinks.png" alt="" class="banner-best-tea">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Strawberry Lemon Tea</h3>
+                            <h4 class="type">F3 - <i class="fa-solid fa-peso-sign"></i>&nbsp;119</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle12()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder12" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Indulge in the sweet and tangy fusion of our Strawberry Lemon Tea (F3). Crafted with black tea leaves, succulent strawberries, zesty lemon juice, and a hint of sugar or sweetener, garnished with lemon slices and drizzled with luscious strawberry syrup for a delightful symphony of flavors.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Watermelon Lemon Tea - F4.png" alt=""  class="tea-classic">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Watermelon Lemon Tea</h3>
+                            <h4 class="type">F4 - <i class="fa-solid fa-peso-sign"></i>&nbsp;119</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle13()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder13" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Quench your thirst with the refreshing Watermelon Lemon Tea (F4). Revel in the juicy combination of watermelon, zesty lemon, and black tea, sweetened to perfection with sugar or your favorite sweetener, and served over ice cubes for a revitalizing burst of flavor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/COCO's Fruit Tea - F5.png" alt=""  class="tea-classic">
+                            <img src="./Menu-Images/Menu-Assets/Best-seller-drinks.png" alt="" class="banner-best-tea">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Coco's Fruit Tea</h3>
+                            <h4 class="type">F5 - <i class="fa-solid fa-peso-sign"></i>&nbsp;169</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle14()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder14" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Dive into a fruity paradise with COCO's Fruit Tea (F5). Immerse yourself in a medley of fresh fruits, black tea leaves, and a touch of sweetness from fruit juice or syrup, garnished with ice cubes and vibrant fruit slices or wedges for a visually appealing and deliciously satisfying beverage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Passion Fruit Lemon Yakult - F6.png" alt=""  class="tea-classic">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Passion Lemon Yakult</h3>
+                            <h4 class="type">F6 - <i class="fa-solid fa-peso-sign"></i>&nbsp;139</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle15()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder15" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Delight your taste buds with the tropical fusion of Passion Fruit Lemon Yakult (F6). Immerse yourself in the tangy goodness of passion fruit juice, zesty lemon, sweet Yakult, and a hint of sugar, garnished with fresh lemon for a uniquely refreshing beverage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Popping Bobba Passion Fruit Tea - F7.png" alt=""  class="tea-classic">
+                            <img src="./Menu-Images/Menu-Assets/Best-seller-drinks.png" alt="" class="banner-best-tea">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Popping Bobba Passion</h3>
+                            <h4 class="type">F7 - <i class="fa-solid fa-peso-sign"></i>&nbsp;119</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle16()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder16" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Experience a burst of flavor with our Popping Bobba Passion Fruit Tea (F7). This tantalizing creation features tea sweetened to perfection, adorned with popping boba, and enriched with the tropical essence of passion fruit juice, simple syrup, and a touch of lemon for a delightful and playful twist.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/KOREAN TASTE FRUIT TEA.png" alt=""  class="tea-classic">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Korean Taste</h3>
+                            <h4 class="type">F8 - <i class="fa-solid fa-peso-sign"></i>&nbsp;119</i>&nbsp;119</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle17()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder17" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Immerse yourself in the rich and flavorful blend of our Korean Taste Fruit Tea (F8). Crafted with a Korean fruit tea base, sweetened with sugar or honey, and enhanced with the distinctive notes of Korean honey citron tea, this beverage promises a uniquely delicious taste of Korean tradition.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Mango Moonlight -  F9.png" alt=""  class="tea-classic">
+                        </div>
+                        <div class="name-pord">
+                            <h3 class="namered">Mango Moonlight</h3>
+                            <h4 class="type">F9 - <i class="fa-solid fa-peso-sign"></i>&nbsp;149</h4>
+                            <div class="hide">
+                                <button type="button" onclick="toggle18()" class="btn-hides"><ion-icon name="eye"></ion-icon></button>
+                                <div id="hinder18" class="hidden">
+                                    <div class="hidden-info">
+                                        <h4>Description:</h4>
+                                        <p>Experience the lusciousness of Mango Moonlight (F9). Revel in the sweet synergy of ripe mango chunks, creamy milk, and a touch of sugar or sweetener for a tropical delight that will transport you to moonlit paradise.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+        </div>
+    </div>
+
+    <div class="page-divider"></div>
+
+    <div class="grand-parent-container-five" id="soda-pops">
+        <div class="header-container-five">
+            <h2>Coco's Soda Drinks</h2>
+        </div>  
+        <div class="container-fruitea Swiper">
+            <div class="slide-container">
+                <div class="card-fruitea-wrapper swiper-wrapper">
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Cherry-Pop-Soda.png" alt=""  class="tea-classic">
+                        </div>
+                        <div class="soda-item-description">
+                            <h3 class="soda-h3-name">Cherry Pop Soda</h3>
+                            <h4 class="soda-h4-series">Naughty Series</h4>
+                            <span class="soda-price"><i class="fa-solid fa-peso-sign"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/In-House-Soda-Cola.png" alt="" class="tea-classic">
+                            
+                        </div>
+                        <div class="soda-item-description">
+                            <h3 class="soda-h3-name">In House Soda Cola</h3>
+                            <h4 class="soda-h4-series">Naughty Series</h4>
+                            <span class="soda-price"><i class="fa-solid fa-peso-sign"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Tokyo-Pop-Soda-Real-Fruits.png" alt=""  class="tea-classic">
+                        </div>
+                        <div class="soda-item-description">
+                            <h3 class="soda-h3-name">Tokyo Pop Soda</h3>
+                            <h4 class="soda-h4-series">Naughty Series</h4>
+                            <span class="soda-price"><i class="fa-solid fa-peso-sign"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/In-House-Soda-Sprite.png" alt=""  class="tea-classic">
+                        </div>
+                        <div class="soda-item-description">
+                            <h3 class="soda-h3-name">In House Soda Sprite</h3>
+                            <h4 class="soda-h4-series">Naughty Series</h4>
+                            <span class="soda-price"><i class="fa-solid fa-peso-sign"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card-fruitea swiper-slide">
+                        <div class="image-box-fruitea">
+                            <img src="./Menu-Images/Menu-Drinks/Cream-Pop-Soda-Float.png" alt=""  class="tea-classic">
+                        </div>
+                        <div class="soda-item-description">
+                            <h3 class="soda-h3-name">Cream Pop Soda Float</h3>
+                            <h4 class="soda-h4-series">Naughty Series</h4>
+                            <span class="soda-price"><i class="fa-solid fa-peso-sign"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+        </div>
+    </div>
+    
+
+    <!-- SNACKS NA TO SNACKS NA TO SNACKS NA TO SNACKS NA TO SNACKS NA TO SNACKS NA TO -->
+    <div class="page-divider"></div>
+    <div class="grand-parent-container-two" id="pizza-id">
+        <div class="header-container-two">
+            <h2 id="snacks-large-dev">Coco's Snacks</h2>
+        </div>
+        <div class="wrapper-two">
+            <div class="card-best">
+                <div class="img-container">
+                    <img src="./Menu-Images/Menu-Snacks/cheesy-sausage-pizza.png" alt="" class="salmon-new" id="cheesy-pizza-img">
+                    <span class="name-meal" id="cheesy-pizza-heading">Cheesy Sausage Pizza</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="banner-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banner">
+                </div>
+                <div class="card-best-details">
+                    <div class="card-details-flip">
+                        <img src="./Menu-Images/Menu-Snacks/cheesy-sausage-pizza.png" alt="" class="pizza-best" id="cheesy-pizza-inside">
+                        <h1 class="pizza1" id="cheesy-pizza-name">Cheesy Sausage Pizza</h1>
+                        <h3 class="salpri" id="cheesy-pizza-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;310</h3>
+                    </div>
+                    <div class="card-ingridients-left-flip">
+                        <p class="pizza-description" id="cheesy-pizza-info">Indulge in the irresistible goodness of our Cheesy Sausage Pizza, a culinary delight crafted with a foundation of freshly made pizza dough. Topped with luscious tomato pizza sauce, generous layers of cheese, savory sausage, and a medley of garlic and seasonings, each bite is a symphony of flavors that promises to satisfy your pizza cravings. Drizzled with a touch of olive oil, this cheesy masterpiece is a perfect harmony of textures and tastes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container">
+                <div class="card-meals">
+                    <div class="img-container-meals" id="right-transi">
+                        <img src="./Menu-Images/Menu-Snacks/beef-pizza.png" alt="" class="beef-tapa" id="beef-pizza-img">
+                        <span class="name-mealed" id="beef-pizza-heading">Beef Pizza</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Snacks/beef-pizza.png" alt="" class="flip-meals" id="beef-pizza-inside">
+                            <h2 class="sal2" id="beef-pizza-name">Beef Pizza</h2>
+                            <h4 class="salpri2" id="beef-pizza-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;370</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="beef-pizza-info">Sink your teeth into the hearty goodness of our Beef Pizza. Enjoy the perfect harmony of pizza dough, tangy tomato pizza sauce, melted cheese, savory beef, bell peppers, onions, mushrooms, all enhanced with a touch of olive oil, garlic, and aromatic herbs for a delicious and fulfilling pizza feast.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals">
+                    <div class="img-container-meals">
+                        <img src="./Menu-Images/Menu-Snacks/shrimp-pizza.png" alt="" class="beef-tapa" id="shrimp-pizza-img">
+                        <span class="name-mealed" id="shrimp-pizza-heading">Shrimp Pizza</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Snacks/shrimp-pizza.png" alt="" class="flip-meals" id="shrimp-pizza-inside">
+                            <h2 class="pizza2" id="shrimp-pizza-name">Shrimp Pizza</h2>
+                            <h4 class="salpri2" id="shrimp-pizza-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;370</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="shrimp-pizza-info">Delight in the exquisite flavors of our Shrimp Pizza, where a golden pizza crust serves as the canvas for a symphony of tastes. Topped with rich tomato pizza sauce, melty cheese, succulent shrimp, and a savory blend of olive oil, garlic, and seasonings, each bite promises a harmonious marriage of textures and seafood-inspired delight.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- snacks nsckas scnaksc skcnaks scnakcs snacks snckac snacks snacks snacks -->
+    <!-- DITO NA AKO -->
+    <div class="grand-parent-container-three" id="meals-meals">
+        <div class="wrapper-three">
+            <div class="card-best-two">
+                <div class="img-container-two">
+                    <img src="./Menu-Images/Menu-Snacks/Durian Pizza.png" alt="" class="kare-kare-new" id="durian-pizza-img">
+                    <span class="name-meal" id="durian-pizza-heading">Durian Pizza</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="bannered-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banners">
+                </div>
+                <div class="card-best-details-two">
+                    <div class="card-details-flip-two">
+                        <img src="./Menu-Images/Menu-Snacks/Durian Pizza.png" alt="" class="flip-img-two" id="durian-pizza-inside">
+                        <h1 class="pizza1" id="durian-pizza-name">Durian Pizza</h1>
+                        <h3 class="salpri8" id="durian-pizza-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;390</sp>
+                    </div>
+                    <div class="card-ingridients-left-flip-two">
+                        <p class="pizza-description" id="durian-pizza-info">Embark on a bold culinary adventure with our Durian Pizza. Indulge in the unique combination of pizza dough, durian, cheese, tomato pizza base, and aromatic herbs, all brought together for an unconventional and flavorful pizza experience. Drizzle with olive oil for an optional touch of richness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container-two">
+                <div class="card-meals-two">
+                    <div class="img-container-meals-two">
+                        <img src="./Menu-Images/Menu-Snacks/dragon-pizza.png" alt="" class="once-meals" id="dragon-pizza-img">
+                        <span class="name-mealed" id="dragon-pizza-heading">Dragon Pizza</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannereds">
+                    </div>
+                    <div class="meals-details-two">
+                        <div class="meals-flip-two">
+                            <img src="./Menu-Images/Menu-Snacks/dragon-pizza.png" alt="" class="twice-meals" id="dragon-pizza-inside">
+                            <h2 class="pizza3" id="dragon-pizza-name">Dragon Pizza</h2>
+                            <h4 class="salpri4" id="dragon-pizza-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;390</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left-two">
+                            <p id="dragon-pizza-info">Spice up your pizza experience with our Dragon Pizza (savory spicy) featuring a choice of shrimp or beef toppings. Crafted with pizza dough, tomato pizza sauce, cheese, red chili flakes, red onion, bell peppers, shrimp or beef, olive oil, and garnished with fresh cilantro or parsley, this pizza promises a flavorful and spicy twist.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals-two">
+                    <div class="img-container-meals-two" id="left-transi">
+                        <img src="./Menu-Images/Menu-Snacks/pineapple-bacon-pizza.png" alt="" class="once-meals" id="bacon-pizza-img">
+                        <span class="name-mealed" id="bacon-pizza-heading">Pineapple Bacon Pizza</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannereds">
+                    </div>
+                    <div class="meals-details-two">
+                        <div class="meals-flip-two">
+                            <img src="./Menu-Images/Menu-Snacks/pineapple-bacon-pizza.png" alt="" class="twice-meals" id="bacon-pizza-inside">
+                            <h2 class="pizza3" id="bacon-pizza-name">Pineapple Bacon Pizza</h2>
+                            <h4 class="salpri4" id="bacon-pizza-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;310</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left-two">
+                            <p id="bacon-pizza-info">Experience our Pineapple Bacon Pizza, featuring a delectable combination of pizza dough topped with tomato pizza sauce, gooey cheese, succulent pineapple chunks, crispy bacon, and flavorful onions. Infused with a touch of olive oil and aromatic herbs, this pizza offers a delightful balance of sweet and savory to tantalize your taste buds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+    <!-- SNACKSSS SNACKSS SCCNAKSS NSCKASKCN KSCNAKS CKSNS -->
+    <div class="grand-parent-container-two" id="best-meals-id">
+        <div class="wrapper-two">
+            <div class="card-best">
+                <div class="img-container">
+                    <img src="./Menu-Images/Menu-Snacks/Office Sandwich.png" alt="" class="salmon-new" id="sandwich-img">
+                    <span class="name-meal" id="sandwich-heading">Office Sandwich</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="banner-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banner">
+                </div>
+                <div class="card-best-details">
+                    <div class="card-details-flip">
+                        <img src="./Menu-Images/Menu-Snacks/Office Sandwich.png" alt="" class="pizza-best" id="sandwich-inside">
+                        <h1 class="pizza1" id="sandwich-name">Office Sandwich</h1>
+                        <h3 class="salpri" id="sandwich-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;280</h3>
+                    </div>
+                    <div class="card-ingridients-left-flip">
+                        <p class="pizza-description" id="sandwich-info">Savor the freshness of our Spinach Pizza, where a golden pizza crust is adorned with a generous layer of vibrant spinach leaves, velvety cheese, and tangy tomato pizza sauce. Drizzled with fragrant olive oil and infused with the aromatic blend of garlic and basil, each bite is a symphony of flavors that celebrates the simplicity and goodness of classic pizza perfection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container">
+                <div class="card-meals">
+                    <div class="img-container-meals" id="right-transi">
+                        <img src="./Menu-Images/Menu-Snacks/Mango Cheese Pizza.png" alt="" class="beef-tapa" id="mango-pizza-img">
+                        <span class="name-mealed" id="mango-pizza-heading">Mango Cheese Pizza</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Snacks/Mango Cheese Pizza.png" alt="" class="flip-meals" id="mango-pizza-inside">
+                            <h2 class="pizza4" id="mango-pizza-name">Mango Cheese Pizza</h2>
+                            <h4 class="salpri2" id="mango-pizza-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;280</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="mango-pizza-info">Experience a tropical twist with our Mango Cheese Pizza, where a golden pizza crust serves as the canvas for a delightful fusion of mango slices and melty cheese. Drizzled with olive oil, honey, and adorned with fragrant basil, this pizza is a harmonious blend of sweet and savory that promises a unique and indulgent flavor experience. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals">
+                    <div class="img-container-meals">
+                        <img src="./Menu-Images/Menu-Snacks/Fruits and Nuts Pizza.png" alt="" class="beef-tapa" id="nuts-pizza-img">
+                        <span class="name-mealed" id="nuts-pizza-heading">Fruits and Nuts Pizza</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Snacks/Fruits and Nuts Pizza.png" alt="" class="flip-meals" id="nuts-pizza-inside">
+                            <h2 class="pizza3" id="nuts-pizza-name">Fruits and Nuts Pizza</h2>
+                            <h4 class="salpri2" id="nuts-pizza-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;290</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="nuts-pizza-info">Elevate your pizza experience with our Fruits and Nuts Pizza, a sweet sensation featuring a luscious cream cheese base drizzled with honey atop a golden pizza dough. Delight in the burst of freshness from a medley of fresh fruits, the crunch of nuts, and a finishing touch of syrup, all adorned with fragrant mint leaves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grand-parent-container-three" id="macau-egg-id">
+        <div class="wrapper-three">
+            <div class="card-best-two">
+                <div class="img-container-two">
+                    <img src="./Menu-Images/Menu-Snacks/COCO's PINOY NACHOS.png" alt="" class="kare-kare-new" id="nachos-img">
+                    <span class="name-meal" id="nachos-heading">Pinoy Nachos</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="bannered-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banners">
+                </div>
+                <div class="card-best-details-two">
+                    <div class="card-details-flip-two">
+                        <img src="./Menu-Images/Menu-Snacks/COCO's PINOY NACHOS.png" alt="" class="flip-img-two" id="nachos-inside">
+                        <h1 class="bagnet1" id="nachos-name">Pinoy Nachos</h1>
+                        <h3 class="bagnetdesc" id="nachos-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;140</sp>
+                    </div>
+                    <div class="card-ingridients-left-flip-two nachos-desc">
+                        <p class="nachos-description" id="nachos-info">Embark on a Filipino flavor adventure with COCO's Pinoy Nachos, a delightful fusion of crunchy tortilla chips loaded with seasoned ground meat, aromatic onions, and garlic. Topped with a generous layer of gooey cheese and fresh tomatoes, this dish is elevated with a special sauce, creating a uniquely Pinoy twist on the classic nachos experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container-two">
+                <div class="card-meals-two">
+                    <div class="img-container-meals-two">
+                        <img src="./Menu-Images/Menu-Snacks/4PC-MACAU-EGG-TARTE.png" alt="" class="once-meals" id="macau-img">
+                        <span class="name-mealed" id="macau-heading">4Pcs Macau Egg Tarte</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannereds">
+                    </div>
+                    <div class="meals-details-two">
+                        <div class="meals-flip-two">
+                            <img src="./Menu-Images/Menu-Snacks/4PC-MACAU-EGG-TARTE.png" alt="" class="twice-meals" id="macau-inside">
+                            <h2 class="pizza4" id="macau-name">Macau Egg Tarte</h2>
+                            <h4 class="salpri4" id="macau-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;165</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left-two">
+                            <p id="macau-info">Savor the delectable taste of our Macau Eggtarts, a set of four indulgent pastries featuring flaky puff pastry embracing a rich filling made from eggs, milk, and a hint of cornstarch for a creamy texture. Each Eggtart is a delightful marriage of crispy layers and velvety custard, offering a taste of the sweet sophistication inspired by Macau's culinary heritage.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals-two">
+                    <div class="img-container-meals-two" id="left-transi">
+                        <img src="./Menu-Images/Menu-Snacks/6PC-macau-egg-tarte.png" alt="" class="once-meals" id="macau-img">
+                        <span class="name-mealed" id="macau-heading">6Pcs Macau Egg Tarte</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannereds">
+                    </div>
+                    <div class="meals-details-two">
+                        <div class="meals-flip-two">
+                            <img src="./Menu-Images/Menu-Snacks/6PC-macau-egg-tarte.png" alt="" class="twice-meals" id="macau-inside">
+                            <h2 class="pizza4" id="macau-name">Macau Egg Tarte</h2>
+                            <h4 class="salpri4" id="macau-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;235</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left-two">
+                            <p id="macau-info">Indulge in the heavenly delights of our Macau Eggtarts, a set of six exquisite pastries where delicate puff pastry envelopes a sumptuous filling of eggs, milk, and a touch of cornstarch. Each Eggtart boasts a perfect blend of flaky layers and velvety custard, delivering a taste of Macau's culinary charm in every bite. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================= -->
+    <!-- = = = = =     4TH PAGE OF MEALS     = = = = = -->
+    <!-- ============================================= -->
+    <div class="grand-parent-container-two" id="others-id">
+        <div class="wrapper-two">
+            <div class="card-best">
+                <div class="img-container">
+                    <img src="./Menu-Images/Menu-Snacks/COCO's BURGER MEAL.png" alt="" class="salmon-new" id="burger-meal-img">
+                    <span class="name-meal" id="burger-meal-heading">Burger Meal</span>
+                    <img src="./Menu-Images/Menu-Assets/Banner-Best-Seller.png" alt="" class="banner-red">
+                    <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-banner">
+                </div>
+                <div class="card-best-details">
+                    <div class="card-details-flip">
+                        <img src="./Menu-Images/Menu-Snacks/COCO's BURGER MEAL.png" alt="" class="flip-img" id="burger-meal-inside">
+                        <h1 class="sal1" id="burger-meal-name">Burger Meal</h1>
+                        <h3 class="salpri" id="burger-meal-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;250</h3>
+                    </div>
+                    <div class="card-ingridients-left-flip">
+                        <p id="burger-meal-info">Indulge in the COCO's Burger Meal – a savory delight featuring succulent patties, crisp lettuce, juicy tomatoes, and flavorful onion rings between soft buns. Topped with generous layers of cheese, ketchup, and mayonnaise, it comes with golden French fries. Elevate your feast with a beverage like the indulgent COCO's Latte or refreshing Lemon Black Tea.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meals-container">
+                <div class="card-meals">
+                    <div class="img-container-meals" id="right-transi">
+                        <img src="./Menu-Images/Menu-Snacks/POTATO FRIES(REAL FRESHLY PEELED POTATO).png" alt="" class="beef-tapa" id="fries-img">
+                        <span class="name-mealed"  id="fries-heading">Potato Fries</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Snacks/POTATO FRIES(REAL FRESHLY PEELED POTATO).png" alt="" class="flip-meals" id="fries-inside">
+                            <h2 class="pizza2" id="fries-name">Potato Fries</h2>
+                            <h4 class="salpri2" id="fries-price"><i class="fa-solid fa-peso-sign"></i>&nbsp;65</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="fries-info">Delight in the crispy goodness of our Potato Fries, made from real freshly peeled potatoes and expertly fried to golden perfection in cooking oil. Customize your snacking experience by choosing your preferred flavor powder—whether it's the tangy Sour Cream, cheesy Cheese, or the classic blend of Sea Salt & Parsley—for a savory treat that caters to your taste preferences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-meals">
+                    <div class="img-container-meals">
+                        <img src="./Menu-Images/Menu-Snacks/TAKOYAKI.png" alt="" class="beef-tapa" id="takoyaki-img">
+                        <span class="name-mealed" id="takoyaki-heading">Takoyaki</span>
+                        <img src="./Menu-Images/Menu-Assets/Chinese-banner-red.png" alt="" class="red-bannered">
+                    </div>
+                    <div class="meals-details">
+                        <div class="meals-flip">
+                            <img src="./Menu-Images/Menu-Snacks/TAKOYAKI.png" alt="" class="flip-meals" id="takoyaki-inside">
+                            <h2 class="sal2" id="takoyaki-name">Takoyaki</h2>
+                            <h4 class="salpri2" id="takoyaki-price">&nbsp;65/105/155</h4>
+                        </div>
+                        <div class="meals-ingridients-flip-left">
+                            <p id="takoyaki-info">Indulge our Takoyaki, savory octopus balls cooked to perfection in a batter mixture and drizzled with Takoyaki sauce. Topped with bonito flakes, seaweed flakes, green onions, and a touch of mayonnaise, this Japanese street food classic offers a delightful burst of umami. Enhance your experience with an optional add-on of crabstick for an extra layer of seafood goodness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="page-divider-lasted"></div>
+
+    <div class="footer">
+        <div class="footer-content-container">
+            <div class="left-footer">
+                <h1>Contact Us</h1>
+                <p>Address: Bridal bouquet Street</p>
+                <p>Phone: 09275789788</p>
+                <p>Email: cocosasianfoodstore@gmail.com</p>
+                <h1>Connect with Us on</h1>
+                <div class="external-icons">
+                    <a href="https://www.foodpanda.ph/?utm_source=google&utm_medium=cpc&utm_campaign=246032313&sem_tracker=246032313&gad_source=1&gclid=CjwKCAiApuCrBhAuEiwA8VJ6Jirzu6FQk2RpMICl_939rJSP_DEJ_KLgs57sB5c7KCiDtgtGeq7OdBoCqtgQAvD_BwE" target="_blank" alt="Food-panda-link"></a>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgrab.onelink.me%2F2695613898%3Fpid%3Dinappsharing%26c%3D2-C3N3FB5ACRL3LA%26is_retargeting%3Dtrue%26af_dp%3Dgrab%253A%252F%252Fopen%253FscreenType%253DGRABFOOD%2526sourceID%253DA4pcqCZkS4%2526merchantIDs%253D2-C3N3FB5ACRL3LA%26af_force_deeplink%3Dtrue%26af_web_dp%3Dhttps%253A%252F%252Fwww.grab.com%252Fdownload%26fbclid%3DIwAR2DoQaYwC3Kytk4edAYzneOGwV6YhFmbD2po1G1YDvfVoAsLdqtEmK7Qvg&h=AT17Tp-ChAzcJh5U1mLaMOZQFXEt4ci--2-iqmSz3aanEkcBEpCF_hCa7x03DDnvysTjvr_KmynJbxgXtV3EilLNTMKm5OtS-MA9izE6iJEDFdX3xbC4ILQDVQqdwlIp15dI5Jv96Q0a_Eo" target="_blank" alt="Grab-Food-link"></a>
+                    <a href="https://www.facebook.com/cocosasianfoodstore/  " target="_blank"  alt="Facebook-link"></a>
+                </div> 
+            </div>
+
+            <div class="center-footer">
+                <h1>Stay in Touch</h1>
+                <p>Stay updated with the latest in Coco's Asian Food Store</p>
+                <div>
+                    <input type="text" name="mail" placeholder="exampleemail168@gmail.com">
+                    <button onclick="location.href='mailto:cocosasianfoodstore@gmail.com';" type="submit" class="button">Submit</button>
+                </div>
+            </div>
+
+            <div class="right-footer">
+                <h1>&#169; Copyright 2023 iVAUZCH</h1>
+                <a href="./faqs-page.html">FAQ's</a>
+                <br>
+                <a href="./privacy-policy-page.html">Privacy Policy</a>
+                <br>
+                <a href="./terms-and-conditions-page.html">Terms and Conditions</a>
+                <div class="webdev-logos">
+                    <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank"></a>
+                    <a href="https://www.canva.com/" target="_blank"></a>
+                    <a href="https://ionicframework.com/" target="_blank"></a>
+                    <a href="https://www.adobe.com/ph_en/products/photoshop/landpa.html?gclid=Cj0KCQiAmNeqBhD4ARIsADsYfTewWU8T_ThnadDrhbGeTB4Cr4Pv9s0TlLZaYoAGV01GRgjJwKj2q3YaAlhYEALw_wcB&sdid=GVTYXXRQ&mv=search&mv2=paidsearch&ef_id=Cj0KCQiAmNeqBhD4ARIsADsYfTewWU8T_ThnadDrhbGeTB4Cr4Pv9s0TlLZaYoAGV01GRgjJwKj2q3YaAlhYEALw_wcB:G:s&s_kwcid=AL!3085!3!444512451750!e!!g!!adobe%20photoshop!703953000!39399096689&gad_source=1" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- --------------------------
+    -----   JavaScript   ----------
+    --------------------------- -->
+    <script src="./Menu-JavaScript/swiper-bundle.min.js"></script>
+    <script src="./Menu-JavaScript/menu-script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

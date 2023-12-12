@@ -1,0 +1,2595 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ==================== ROOT ==================== */
+:root {
+    --primary-color: #05764A;
+    --secondary-color: #FFCF60;
+    --main-text-color: #E2B808;
+    --second-text-color: #016450;
+    --third-text-color: #FFF;
+    --four-text-color: #BC1823;
+    --font-style: 'Open Sans';
+    --dark-green: #023020;
+}
+/* ==================== UNIVERSAL SELECTOR ==================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--font-style);
+    background-image: linear-gradient(rgba(1,101,81,0.85), rgba(1,101,81,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: default;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: var(--four-text-color);
+    transition: all 0.5s ease-in-out;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--second-text-color);
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--third-text-color);
+}
+
+.cursor-dot img{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    z-index: 100000;
+    filter: saturate(100%);
+    color: var(--third-text-color);
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--third-text-color);
+    box-shadow: 0 0 20px var(--third-text-color);
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 100000;
+    pointer-events: none;
+}
+
+.tablet-mobile-landpage {
+    display: none;
+}
+/* ==================== LANDING SELECTION PAGE ==================== */
+.new-menu-landing-page {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(1,101,81,0.85), rgba(1,101,81,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    grid-template-rows: 1fr;
+}
+
+.bg {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 80vh;
+}
+
+.bg-product {
+    margin: 5%;
+    height: auto;
+    animation-name: blobshape;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    background: var(--secondary-color);
+    border-radius: 70% 30% 69% 31% / 18% 63% 37% 82%;
+}
+
+.container {
+    max-width: 100%;
+    height: 65vh;
+}
+
+#sliderproduct {
+    width: 100%;
+}
+
+#sliderproduct .carousel-inner {
+    overflow: visible;
+}
+
+#sliderproduct .col-sm-6.image {
+    height: 65vh;
+    background: hsla(42, 100%, 69%, 0.60);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation-name: blobshape;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    border-radius: 70% 30% 69% 31% / 18% 63% 37% 82%;
+}
+
+.item {
+    padding: 10px;
+}
+
+.col-sm-6.image .item img.img-fluid {
+    width: 25em;
+    transform: scale(1);
+    margin-left: 10%;
+    border-radius: 50%;
+    animation-name: blobshape;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    border-radius: 70% 30% 69% 31% / 18% 63% 37% 82%;
+}
+
+#sliderproduct .col-sm-4.mr-auto {
+    margin-top: 22px;
+}
+
+.col-sm-6 {
+    animation-name: blobshape;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    border-radius: 70% 30% 69% 31% / 18% 63% 37% 82%;
+    /* box-shadow: 0 0 10px #000; */
+    background: hsla(42, 100%, 69%, 0.60);
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.details h2 {
+    color: var(--dark-green);
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: .5px;
+    margin-top: 1em;
+}
+
+.details .cr3 {
+    color: var(--second-text-color);
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 8px var(--third-text-color);
+}
+
+.details .cr4 {
+    font-size: 1rem;
+    color: var(--dark-green);
+    text-align: justify;
+    padding: 0 4em;
+    line-height: 2rem;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+
+.details .cr1 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-shadow: 1px 3px 2px #000;
+    font-size: 1.4rem;
+    background: var(--four-text-color);
+    padding: 2px 45px 5px;
+    border-radius: 60px;
+    transition: .3s ease-in-out;
+    border: 2px solid var(--secondary-color);
+    cursor: pointer;
+    box-shadow: 0 0 2px var(--dark-green);
+}
+
+.details .cr1:hover {
+    border: 2px solid hsl(42, 100%, 50%);
+    background: hsl(356, 77%, 30%);
+}
+
+#sliderproduct .carousel-item {
+    transition: .5s;
+}
+
+#sliderproduct a.carousel-control-prev, #sliderproduct a.carousel-control-next {
+    border-radius: 50%;
+    background-color: brown;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 1;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#sliderproduct ol.carousel-indicators {
+    display: none;
+}
+/* ==================== NAVIGATION CONTAINER ==================== */
+.navigation-container {
+    height: 100vh;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 3% 0.625rem;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,1));
+}
+
+.navigation-container .nav-item .slide-button img{
+    width: 3rem;
+    margin: 0.25rem;
+}
+
+.nav-item .slide-button {
+    background: var(--four-text-color);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav-item .slide-button-info {
+    font-size: 0;
+    width: 0;
+    color: var(--third-text-color);
+    line-height: 3.5rem;
+    height: 3.5rem;
+    left: 1.25rem;
+    position: absolute;
+    vertical-align: middle;
+    background: var(--four-text-color);
+    border-radius: 1.25rem 2.5rem 2.5rem 1.25rem;
+    z-index: -1;
+    transition: width .3s, height .3s, font-size .2s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: width .3s, height .3s, font-size .2s;
+    font-weight: 600;
+    margin-left: 0.938rem;
+    text-transform: uppercase;
+}
+
+.slide-button:hover .slide-button-info {
+    width: 8.75rem;
+    left: 30px;
+    font-size: 1rem;
+    padding-left: 1.875rem;
+}
+
+.slide-button:hover, 
+.slide-button-info {
+    transform: translateX(-1.75rem);
+    transition: .3s;
+}
+
+.navigation-container div:nth-child(6) {
+    margin-top: 1.25rem;
+}
+
+.back-to-top {
+    background: var(--four-text-color);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.back-to-top img {
+    width: 2.625rem;
+    margin: 0.25rem;
+}
+/* ==================== GRAND PARENT CONTAINER ONE ==================== */
+.grand-parent-container-one {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(1,101,81,0.85), rgba(1,101,81,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+    overflow: hidden;
+}
+
+.header-container-one {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    padding: 0 10% 0 10%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.header-container-one h2 {
+    margin-top: 2%;
+    padding-left: 1%;
+    grid-row: 1/2;
+    font-size: 1.55rem;
+    font-weight: 400;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+    animation: type 15s infinite, blink 1s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 44ch;
+    border-right: 2px solid var(--main-text-color);
+}
+
+.header-container-one h1 {
+    grid-row: 2/3;
+    font-size: 4.30rem;
+    font-weight: 900;
+    color: var(--third-text-color);
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0,0,0,1);
+}
+/* ==================== SELECTION MENU CONTAINER ==================== */
+.selection-menu-container {
+    grid-row: 2/3;
+    margin-left: 10%;
+    max-width: 75%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 4%;
+    grid-column-gap: 3rem;
+}
+
+.menu-containers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    position: relative;
+    border-radius: 8px;
+    background: #083d0b;
+}
+
+.Box{
+	position:relative;
+	width: 100%;
+	height: 60vh;
+	transform-style:preserve-3d;
+	perspective:800px;
+	transition:1s;
+    z-index: 5;
+}
+
+.Box .FlipBox{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height: 100%;
+	transition:1s;
+	transform-style:preserve-3d;
+	box-shadow:0px 0px 10px 2px rgba(0,0,0,.3);
+}
+
+.Box .Front,
+.Box .Back{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	transition:.5s;
+	backface-visibility:hidden;
+}
+
+.Box .Front {
+	width:100%;
+	height:100%;
+    background: var(--third-text-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:
+    inset -3px -3px 6px 1px #b5b5aabb,
+    inset 3px 3px 3px 1px #f9f4f0,
+    1px 1px 0px 1px #bfbab4,
+    2px 2px 0px 1px #bfbab4,
+    3px 3px 0px 1px #bfbab4,
+    4px 4px 0px 1px #bfbab4,
+    5px 5px 0px 1px #bbb7b0,
+    6px 6px 0px 1px #b5b5aa,
+    7px 7px 0px 1px #083d0b,
+    8px 8px 0px 1px #083d0b,
+    9px 9px 0px 1px #083d0b,
+    10px 10px 10px 4px rgba(0,0,0,0.25);
+}
+
+.Box .Front span {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 4px 4px 0 var(--four-text-color);
+}
+
+.Box .Back{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+	background: #083d0b;
+	color:#fff;
+	transform:rotateY(180deg);
+    border-radius: 8px;
+    box-shadow:
+    inset 3px 3px 6px 1px #083d0b,
+    inset -3px -3px 3px 1px #083d0b,
+    -1px -1px 0px 1px #bfbab4,
+    -2px -2px 0px 1px #bfbab4,
+    -3px -3px 0px 1px #bfbab4,
+    -4px -4px 0px 1px #bfbab4,
+    -5px -5px 0px 1px #bbb7b0,
+    -6px -6px 0px 1px #b5b5aa,
+    -7px -7px 0px 1px var(--third-text-color),
+    -8px -8px 0px 1px var(--third-text-color),
+    -9px -9px 0px 1px var(--third-text-color),
+    -10px -10px 10px 4px rgba(0,0,0,0.25);
+}
+
+.Box .Back a {
+    color: var(--third-text-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    transition: .3s ease-in-out;
+    text-shadow: 2px 1.5px 2px red;
+}
+
+.Box .Back .tea {
+    font-size: 1.5rem;
+}
+
+.Box .Back a:hover {
+    color: var(--four-text-color);
+    text-shadow: 2px 1.5px 2px #fff;
+}
+
+.Box:hover .FlipBox{
+	transform:rotateY(180deg);
+}
+/* ==================== BANNER IMAGE ==================== */
+.left-side {
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    width: auto;
+    transform: scale(1.1);
+}
+
+.right-side {
+    position: absolute;
+    width: auto;
+    transform: scale(1.1) rotate(180deg);
+    right: 4%;
+    bottom: 7%;
+}
+/* ==================== PAGE DIVIDER ==================== */
+.page-divider {
+    width: 100%;
+    height: 5vh;
+    background-image: url(../Menu-Images/Menu-Assets/page-divider.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-divider-lasted {
+    width: 100%;
+    height: 5vh;
+    background-image: url(../Menu-Images/Menu-Assets/page-divider.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+}
+/* ==================== BEST SELLER MEALS MENU PAGE ==================== */
+/* ==================== GRAND PARENT CONTAINER TWO ==================== */
+.grand-parent-container-two {
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(1,101,81,0.85), rgba(1,101,81,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    background-attachment: fixed;
+    grid-template-columns: 1fr 150px;
+    grid-template-rows: 150px 1fr;
+    position: relative;
+}
+
+.grand-parent-container-two .header-container-two {
+    grid-row: 1 / 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-container-two h2 {
+    color: var(--third-text-color);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin-left: 12%;
+    text-shadow: 0 2px 10px rgba(0,0,0,1);
+}
+
+.grand-parent-container-two .wrapper-two {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 3rem;
+}
+
+.wrapper-two .card-best {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background: var(--secondary-color);
+    position: relative;
+    margin-left: 15%;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+}
+
+.card-best:hover {
+    z-index: 11111;
+    transform: perspective(2000px);
+}
+
+.card-best .img-container {
+    background: var(--secondary-color);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.name-meal {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 var(--dark-green);
+    z-index: 2;
+}
+
+.sirlion-name {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 var(--dark-green);
+    z-index: 2;
+}
+
+.karekare-meal {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 var(--dark-green);
+    z-index: 2;
+}
+
+.card-best .img-container .salmon-new {
+    width: 65%;
+    z-index: 2;
+}
+
+.banner-red {
+    position: absolute;
+    right: 5%;
+    top: -2%;
+    z-index: 3;
+}
+
+.card-best .img-container .red-banner {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card-best:hover .img-container {
+    transform: rotateY(-135deg);
+}
+
+.card-best .card-best-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    color: #000;
+    display: grid;
+    width: 100%;
+    height: 79vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 1fr;
+    padding: 5% 10%;
+}
+
+.card-details-flip {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background: var(--second-text-color);
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.flip-img {
+    grid-column: 1/2;
+    width: 100%;
+    position: absolute;
+    left: 1%;
+    transform: scale(2);
+}
+
+
+.card-details-flip .salpri {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.card-details-flip .sal1 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 3rem;
+}
+
+.card-details-flip .sal6 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 2.5rem;
+}
+
+.card-details-flip .salpri6 {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-right: .5rem;
+    text-align: center;
+}
+
+.card-details-flip-two .sal8 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 2.5rem;
+}
+
+.card-details-flip-two .salpri8 {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-right: .5rem;
+    text-align: center;
+}
+
+.card-ingridients-left-flip {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2%;
+    text-align: justify;
+}
+
+.card-ingridients-left-flip p {
+    font-size: 1.1rem;
+    margin-top: 4%;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+.card-ingridients-left-fliped {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2%;
+    text-align: justify;
+}
+
+.card-ingridients-left-fliped p {
+    font-size: 1.1rem;
+    margin-top: 1%;
+    font-weight: 500;
+    line-height: 2rem;
+}
+/* MEALS-RIGHT SIDE NOT BEST SELLER */
+.wrapper-two .meals-container {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 300px));
+    grid-row-gap: 3rem;
+    margin-right: 20%;
+}
+
+.card-meals {
+    background: var(--secondary-color);
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+}
+
+.card-meals:hover {
+    z-index: 1111;
+    transform: perspective(2000px);
+}
+
+.card-meals .img-container-meals {
+    background: var(--secondary-color);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    transform-origin: right;
+    z-index: 1;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    border: 1px solid #000;
+}
+
+.img-container-meals .beef-tapa {
+    width: 55%;
+}
+
+.name-mealed {
+    padding-bottom: 6%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 var(--dark-green);
+    z-index: 2;
+}
+
+.img-container-meals .red-bannered {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card-meals:hover .img-container-meals {
+    transform: rotateY(135deg);
+}
+
+.card-meals .meals-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr;
+    width: 100%;
+    height: 36.5vh;
+    padding: 5%;
+}
+
+.meals-flip {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background: var(--second-text-color);
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px 1fr 80px;
+    grid-template-rows: 1fr;
+    place-items: center;
+    margin-top: 2%;
+}
+
+.flip-meals {
+    grid-column: 1/2;
+    width: 100%;
+    position: absolute;
+    transform: scale(2);
+}
+
+.meals-details .sal2 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.meals-details .salpri2 {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.meals-details .sal7 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    text-transform: uppercase;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.meals-details .salpri7 {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1rem;
+    padding-right: .4rem;
+    font-weight: 700;
+}
+
+.meals-ingridients-flip-left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 2%;
+}
+
+.meals-ingridients-flip-left p {
+    font-size: .7rem;
+    text-align: justify;
+    margin-top: 5%;
+    line-height: 1.15rem;
+}
+
+.meals-details .sal3 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    text-transform: uppercase;
+    padding-left: .5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.meals-details .salpri3 {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1.1rem;
+    padding-right: 1rem;
+}
+/* ==================== MEALS MENU PAGE ==================== */
+/* ==================== GRAND PARENT CONTAINER THREE ==================== */
+.grand-parent-container-three {
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(1,101,81,0.85), rgba(1,101,81,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    grid-template-rows: 150px 1fr;
+}
+
+.grand-parent-container-three .wrapper-three {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 3rem;
+}
+
+.wrapper-three .card-best-two {
+    margin-right: 12%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background: var(--secondary-color);
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    z-index: 1;
+}
+
+.card-best-two:hover {
+    z-index: 11111;
+    transform: perspective(2000px);
+}
+
+.card-best-two .img-container-two {
+    background: var(--secondary-color);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform-origin: right;
+    z-index: 1;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.kare-kare-new {
+    width: 65%;
+    z-index: 2;
+}
+
+.bannered-red {
+    position: absolute;
+    left: 7%;
+    top: -2%;
+    z-index: 3;
+}
+
+.card-best-two .img-container-two .red-banners {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card-best-two:hover .img-container-two {
+    transform: rotateY(135deg);
+}
+
+.card-best-two .card-best-details-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    color: #000;
+    display: grid;
+    width: 100%;
+    height: 79.9vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 1fr;
+    padding: 5% 10%;
+}
+
+.card-details-flip-two {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background: var(--second-text-color);
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 1fr;
+    place-items: center;
+    margin-top: 5%;
+}
+
+.flip-img-two {
+    grid-column: 1/2;
+    width: 100%;
+    position: relative;
+    transform: scale(2);
+}
+
+.card-details-flip-two .bagnet1 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-details-flip-two .bagnetdesc {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-right: 1rem;
+}
+
+.card-ingridients-left-flip-two {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-ingridients-left-flip-two p {
+    font-size: 1.1rem;
+    margin-top: 3%;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+.card-ingridients-left-flip-twoo {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-ingridients-left-flip-twoo p {
+    font-size: 1.1rem;
+    margin-top: 3%;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: justify;
+}
+/* NOT BEST SELLER MENU PAGE */
+.meals-container-two {
+    grid-row: 1 / 3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 300px));
+    grid-row-gap: 3rem;
+    margin-left: 25%;
+}
+
+.card-meals-two {
+    background: var(--secondary-color);
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    z-index: 1;
+}
+
+.card-meals-two:hover {
+    z-index: 11111;
+    transform: perspective(2000px);
+}
+
+.card-meals-two .img-container-meals-two {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+    border: 1px solid #000;
+}
+
+.img-container-meals-two .red-bannereds {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.img-container-meals-two .once-meals {
+    width: 60%;
+}
+
+.card-meals-two:hover .img-container-meals-two {
+    transform: rotateY(-135deg);
+}
+
+.card-meals-two .meals-details-two {
+    width: 100%;
+    height: 36.5vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 80px 1fr;
+    padding: 5%;
+    color: #000;
+}
+
+.meals-flip-two {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background: var(--second-text-color);
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px 1fr 80px;
+    grid-template-rows: 1fr;
+    place-items: center;
+    margin-top: 5%;
+}
+
+.twice-meals {
+    grid-column: 1/2;
+    width: 100%;
+    position: absolute;
+    transform: scale(2);
+}
+
+.meals-flip-two .sal4 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 1.5rem;
+}
+
+.meals-flip-two .salpri4 {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: .8rem;
+    padding-right: .5rem;
+    vertical-align: middle;
+    font-weight: 700;
+}
+
+.meals-flip-two .sal5 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+
+.meals-flip-two .salpri5 {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.meals-flip-two .sal9 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    vertical-align: middle;
+}
+
+#porkchop-name {
+    text-align: center;
+}
+
+.meals-flip-two .salpri9 {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.meals-ingridients-flip-left-two {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    font-weight: 600;
+}
+
+.meals-ingridients-flip-left-two p {
+    font-size: .7rem;
+    text-align: justify;
+    margin-top: 6%;
+}
+
+#tonkatsu {
+    font-size: .7rem;
+    text-align: justify;
+    margin-top: 12%; 
+}
+
+#tokwa-info {
+    margin-top: 12%;
+}
+
+#hungarian-name {
+    margin-left: 1em;
+}
+/* ==================== MEALS MENU PAGE ==================== */
+/* ==================== GRAND PARENT CONTAINER FOUR ==================== */
+.grand-parent-container-four {
+    width: 100%;
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(1,101,81,0.85), rgba(1,101,81,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    grid-template-rows: 150px 1fr;
+    padding-bottom: 5%;
+}
+
+.grand-parent-container-four .header-container-four {
+    grid-row: 1 / 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-container-four h2 {
+    color: var(--third-text-color);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin-left: 12%;
+    text-shadow: 0 2px 10px rgba(0,0,0,1);
+}
+
+.wrapper-four {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 5rem;
+    margin-left: 9.5%;
+    margin-right: 7.5%;
+}
+
+.wrapper-four .noodles-container {
+    background: var(--secondary-color);
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+}
+
+.noodles-container:hover {
+    z-index: 11111;
+    transform: perspective(2000px);
+}
+
+.wrapper-four .img-noodles-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+    border: 1px solid #000;
+}
+
+.img-noodles-container .nowdle {
+    width: 60%;
+}
+
+.nood-banner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.name-boodles {
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 var(--dark-green);
+    z-index: 2;
+}
+
+.noodles-container:hover .img-noodles-container {
+    transform: rotateY(-135deg);
+}
+
+.noodles-container .noodles-details {
+    width: 100%;
+    height: 59.5vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 105px 1fr;
+    padding: 6% 10%;
+}
+
+.noodles-flip-info {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background: var(--second-text-color);
+    position: relative;
+    display: grid;
+    grid-template-columns: 100px 1fr 80px;
+    grid-template-rows: 1fr;
+    place-items: center;
+    margin-top: 5%;
+}
+
+.noodles-flip-info .nowdles {
+    grid-column: 1/2;
+    width: 85%;
+    position: absolute;
+    transform: scale(2);
+}
+
+.noodles-flip-info h2 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-left: 2.5rem;
+    font-weight: 700;
+}
+
+.noodles-flip-info h4 {
+    grid-column: 3/4;
+    color: var(--third-text-color);
+    font-size: 1rem;
+    margin-right: .5rem;
+    font-weight: 700;
+}
+
+.noodles-info-ingridients-left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.noodles-info-ingridients-left p {
+    color: #000;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.7rem;
+    margin-top: 6%;
+}
+
+.wrapper-four .img-noodles-container-two {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    transform-origin: right;
+    z-index: 1;
+    transition: 1s;
+    border: 1px solid #000;
+}
+
+.img-noodles-container-two .nowdle {
+    width: 60%;
+}
+
+.noodles-container:hover .img-noodles-container-two {
+    transform: rotateY(135deg);
+}
+/* ==================== DRINKS MENU PAGE ==================== */
+/* ==================== GRAND PARENT CONTAINER FIVE ==================== */
+.grand-parent-container-five {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 208, 97,0.85), rgba(255, 208, 97,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: grid;
+    grid-template-columns:  1fr 150px;
+    grid-template-rows: 150px 1fr;
+}
+
+.header-container-five {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.header-container-five h2 {
+    color: var(--third-text-color);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin-left: 12%;
+    text-shadow: 0 2px 10px rgba(0,0,0,1);
+}
+/* ==================== DRINKS MENU PAGE ==================== */
+/* ==================== GRAND PARENT CONTAINER SIX ==================== */
+.grand-parent-container-six {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 208, 97,0.85), rgba(255, 208, 97,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: grid;
+    grid-template-columns:  1fr 150px;
+    grid-template-rows: 150px 1fr;
+    overflow: hidden;
+}
+
+.header-container-six {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-container-six h2 {
+    color: var(--third-text-color);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin-left: 12%;
+    text-shadow: 0 2px 10px rgba(0,0,0,1);
+}
+
+.container-fruitea {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 79vw;
+    width: 100%;
+    padding: 60px 0;
+    background-image: linear-gradient(rgba(1,101,81,0.85), rgba(1,101,81,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 2% 2% 2% 8%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card-fruitea {
+    background: var(--third-text-color);
+    border-radius: 20px;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 100px rgba(0,0,0,0.4) inset;
+    position: relative;
+}
+
+.card-fruitea .image-box-fruitea {
+    height: 18.75rem;
+}
+
+.banner-best-tea {
+    position: absolute;
+    top: -7%;
+    left: -10%;
+    width: 9vw;
+    /* left: -24em;
+    top: -15%; */
+    transform: scale(.9);
+}
+
+.card-fruitea .image-box-fruitea .tea-classic {
+    width: 100%;
+    height: 100%;
+}
+
+.card-fruitea .name-pord {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 20.3vh;
+    column-gap: 10px;
+    padding: 10px 10px;
+    background: var(--secondary-color);
+    border-radius: 0 0 20px 20px;
+    align-items: center;
+}
+
+.namered {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--four-text-color);
+}
+
+.type {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--four-text-color);
+}
+
+.name-pord .hide {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: .5rem;
+    padding: 2%
+}
+
+.hide .hidden {
+    padding: 20px;
+    background: var(--third-text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    display: none;
+    border-radius: 10px 10px 0 0;
+    transition: .4s ease-in-out;
+}
+
+.hidden .hidden-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hidden-info h4 {
+    color: var(--four-text-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.hidden-info p {
+    font-size: .9rem;
+    line-height: 1.3rem;
+    letter-spacing: .3px;
+    text-align: center;
+}
+
+.btn-hides {
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    vertical-align: middle;
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    border: 3px solid var(--four-text-color);
+    border-radius: 10px;
+    transition: .3s ease-in;
+}
+
+.btn-hides:hover {
+    background: var(--four-text-color);
+    color: var(--third-text-color);
+    transform: scale(1.1);
+    box-shadow: 0 0 4px #000;
+}
+
+.btn-hides ion-icon {
+    vertical-align: middle;
+    font-size: 1.3rem;
+}
+
+.swiper-navBtn {
+    color: var(--four-text-color);
+    height: 50px;
+    width: 50px;
+    transform: translateY(-40%);
+    background: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 24px;
+}
+
+.swiper-pagination {
+    margin-bottom: 1rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--secondary-color);
+    width: .7rem;
+    height: .7rem;
+}
+/* ==================================================== */
+/* ================     ICED COFFE      ================ */
+.iced-coffee-grand-container {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(1,101,81,0.85), rgba(1,101,81,0.85)), url(../Menu-Images/Menu-Assets/banner-one.png);
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    grid-template-rows: 150px 1fr;
+    position: relative;
+}
+
+.iced-coffee-grand-container .iced-coffee-header-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iced-coffee-header-container h2 {
+    color: var(--four-text-color);
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    background: var(--third-text-color);
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.coffee-container {
+    margin: 2%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.left-coffee {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.left-coffee-1 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.left-coffee-2 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.mid-coffee {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    place-items: center;
+}
+
+.mid-coffee img {
+    width: 100%;
+    transform: scale(1.1);
+    position: relative;
+    right: 7%;
+}
+
+.right-coffee {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right-coffee-1 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.right-coffee-2 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.left-coffee-1 h1,
+.left-coffee-2 h1,
+.right-coffee-1 h1,
+.right-coffee-2 h1 {
+    width: 100%;
+    display: block;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 2px var(--dark-green);
+}
+
+
+.left-coffee-1 p,
+.left-coffee-2 p,
+.right-coffee-1 p,
+.right-coffee-2 p {
+    letter-spacing: .5px;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: var(--third-text-color);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.left-coffee-1 h2,
+.left-coffee-2 h2,
+.right-coffee-1 h2,
+.right-coffee-2 h2 {
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 2px var(--dark-green);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+/* SNAKCS SNACKS SNACKS SNACKS SNACKS */
+.pizza-best {
+    grid-column: 1/2;
+    width: 100%;
+    position: absolute;
+    left: 1%;
+    top: 3%;
+    transform: scale(2);
+}
+
+.pizza1 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 2.5rem;
+}
+
+.pizza2 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-left: 1.5rem;
+    font-weight: 700;
+}
+
+.pizza3 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-left: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#bacon-pizza-info{
+    padding-top: 2rem;
+}
+
+.pizza4 {
+    grid-column: 2/3;
+    color: var(--third-text-color);
+    font-size: .9rem;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    font-weight: 700;
+}
+
+#takoyaki-price {
+    font-size: 1rem;
+    padding-right: 3rem;
+}
+
+.card-ingridients-left-flip .pizza-description,
+.card-ingridients-left-flip-two .pizza-description {
+    font-size: 1.1rem;
+    margin-top: 4%;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+
+.card-ingridients-left-flip-two .nachos-description {
+    font-size: 1.1rem;
+    margin-top: 6%;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+
+#menuToggle {
+    display: none;
+}
+
+#menuToggle a {
+    display: none;
+}
+
+#menuToggle input {
+    display: none;
+}
+
+#menuToggle span {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+#menu li {
+    display: none;
+}
+
+.soda-item-description {
+    height: 20.3%;
+    width: 100%;
+    background: var(--secondary-color);
+    padding: .7em 1em;
+}
+
+.soda-h3-name {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--four-text-color);
+}
+
+.soda-h4-series {
+    width: 82.5%;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--four-text-color);
+}
+
+.soda-price {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--four-text-color);
+}
+
+#hide-breakfast {
+    display: none;
+}
+
+#sisig-info {
+    padding-top: 2em;
+}
+
+#hashbrown-info {
+    padding-top: 3em;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes blobshape {
+    10% {
+        border-radius: 70% 30% 69% 31% / 18% 63% 37% 82%;
+    }
+
+    20% {
+        border-radius: 55% 45% 59% 41% / 32% 51% 49% 68%;
+    }
+
+    30% {
+        border-radius: 34% 66% 81% 19% / 23% 77% 23% 77%;
+    }
+
+    40% {
+        border-radius: 69% 31% 54% 46% / 39% 87% 13% 61%;
+    }
+
+    50% {
+        border-radius: 60% 40% 27% 73% / 84% 47% 53% 16% ;
+    }
+    
+    55% {
+        border-radius: 77% 23% 69% 31% / 58% 42% 58% 42%;
+    }
+
+    60% {
+        border-radius: 60% 40% 27% 73% / 84% 47% 53% 16% ;
+    }
+
+    70% {
+        border-radius: 69% 31% 54% 46% / 39% 87% 13% 61%;
+    }
+
+    80% {
+        border-radius: 34% 66% 81% 19% / 23% 77% 23% 77%;
+    }
+
+    90% {
+        border-radius: 55% 45% 59% 41% / 32% 51% 49% 68%;
+    }
+
+    100% {
+        border-radius: 70% 30% 69% 31% / 18% 63% 37% 82%;
+    }
+}
+
+/* ----------------------------------------------
+----------      R I C E     M E A L S       -----
+------------------------------------------------- */
+
+/* ==PORK TERIYAKI== */
+#teriyaki-inside {
+    top: 0;
+}
+
+#teriyaki-name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#teriyaki-price {
+    font-size: 1.5rem;
+}
+
+#teriyaki-info {
+    line-height: 2.5rem;
+    margin-top: 1.5em;
+}
+
+/* ==BEEF TAPA & TONKATSU== */
+#tapa-inside,
+#tonkatsu-inside {
+    left: 25%;
+}
+
+#tapa-name,
+#tonkatsu-name {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#tapa-price,
+#tonkatsu-price {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* ==KARE-BAGNET== */
+#kare-bagnet-inside {
+    top: 0;
+}
+
+#kare-bagnet-name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#kare-bagnet-price {
+    font-size: 1.5rem;
+}
+
+#kare-bagnet-info {
+    line-height: 2.5rem;
+    margin-top: 1.5em;
+}
+
+/* ==SISIG & HASHBROWN== */
+#sisig-inside,
+#hashbrown-inside {
+    left: 25%;
+}
+
+#sisig-name,
+#hashbrown-name {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 0 0 2em;
+}
+
+#sisig-price,
+#hashbrown-price {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* ==Tokwa't Bagnet== */
+#tokwa-inside {
+    top: 0;
+}
+
+#tokwa-name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#tokwa-price {
+    font-size: 1.5rem;
+}
+
+#tokwa-info {
+    line-height: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==TOCINO & SALMON RICE== */
+#tocino-inside,
+#salmon-inside {
+    left: 25%;
+}
+
+#tocino-name,
+#salmon-name {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0 0 0 1em;
+}
+
+#tocino-price,
+#salmon-price {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* ==BURGER STEAK== */
+#burger-steak-inside {
+    top: 0;
+}
+
+#burger-steak-name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#burger-steak-price {
+    font-size: 1.5rem;
+}
+
+#burger-steak-info {
+    line-height: 3rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+/* ==PORKCHOP & BEEF STEAK== */
+#porkchop-inside,
+#beef-steak-inside {
+    left: 25%;
+}
+
+#porkchop-name,
+#beef-steak-name {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 0 0 2em;
+}
+
+#porkchop-price,
+#beef-steak-price {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+#porkchop-info,
+#beef-steak-info {
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+
+/* ==CHICKEN WINGS== */
+#chicken-inside {
+    top: 0;
+}
+
+#chicken-name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#chicken-price {
+    font-size: 1.5rem;
+}
+
+#chicken-info {
+    line-height: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==THAI BEEF & HUNGARIAN== */
+#thai-beef-inside,
+#hungarian-inside {
+    left: 25%;
+}
+
+#thai-beef-name,
+#hungarian-name {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0 0 0 2em;
+}
+
+#thai-beef-price,
+#hungarian-price {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#thai-beef-info,
+#hungarian-info {
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+
+/* --------------------------------------------------
+-----   E N D   O F     R I C E     M E A L S   -----
+----------------------------------------------------- */
+
+/* ------------------------------------------------------
+----------      S T A R T   O F     S N A C K S     -----
+--------------------------------------------------------- */
+
+/* ==CHEESY PIZZA== */
+#cheesy-pizza-inside {
+    top: 0;
+}
+
+#cheesy-pizza-name {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#cheesy-pizza-price {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#cheesy-pizza-info {
+    line-height: 2.5rem;
+    margin-top: 2.5em;
+    padding: 0;
+}
+
+/* ==BEEF & SHRIMP PIZZA== */
+#beef-pizza-inside,
+#shrimp-pizza-inside {
+    left: 25%;
+}
+
+#beef-pizza-name,
+#shrimp-pizza-name {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0 0 0 1em;
+}
+
+#beef-pizza-price,
+#shrimp-pizza-price {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#beef-pizza-info,
+#shrimp-pizza-info {
+    margin: 1.5em 0 0 0;
+    padding: 0;
+}
+
+/* ==DURIAN PIZZA== */
+#durian-pizza-inside {
+    top: 0;
+}
+
+#durian-pizza-name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#durian-pizza-price {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#durian-pizza-info {
+    line-height: 3rem;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* ==DRAGON & BACON== */
+#dragon-pizza-inside,
+#bacon-pizza-inside {
+    left: 25%;
+}
+
+#dragon-pizza-name,
+#bacon-pizza-name {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 0 0 3em;
+}
+
+#dragon-pizza-price,
+#bacon-pizza-price {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+#dragon-pizza-info,
+#bacon-pizza-info {
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+
+/* ==SANDWICH== */
+#sandwich-inside {
+    top: 0;
+}
+
+#sandwich-name {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 0 1.5em;
+    padding: 0;
+}
+
+#sandwich-price {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#sandwich-info {
+    line-height: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==MANGO & NUTS PIZZA== */
+#mango-pizza-inside,
+#nuts-pizza-inside {
+    left: 25%;
+}
+
+#mango-pizza-name,
+#nuts-pizza-name {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 0 0 3em;
+}
+
+#mango-pizza-price,
+#nuts-pizza-price {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+#mango-pizza-info,
+#nuts-pizza-info {
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+
+/* ==BURGER STEAK== */
+#nachos-inside {
+    top: 0;
+}
+
+#nachos-name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#nachos-price {
+    font-size: 1.5rem;
+}
+
+#nachos-info {
+    line-height: 3rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+/* ==PORKCHOP & BEEF STEAK== */
+#macau-inside {
+    left: 25%;
+}
+
+#macau-name {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 0 0 3em;
+}
+
+#macau-price {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+#macau-info {
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+
+/* ==CHICKEN WINGS== */
+#burger-meal-inside {
+    top: 0;
+}
+
+#burger-meal-name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#burger-meal-price {
+    font-size: 1.5rem;
+}
+
+#burger-meal-info {
+    line-height: 3rem;
+    margin: .5em 0 0 0;
+    padding: 0;
+}
+
+/* ==THAI BEEF & HUNGARIAN== */
+#fries-inside,
+#takoyaki-inside {
+    left: 25%;
+}
+
+#fries-name,
+#takoyaki-name {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+#fries-price,
+#takoyaki-price {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 2em 0 0;
+}
+
+#fries-info,
+#takoyaki-info {
+    margin: 2em 0 0 0;
+}
+
+
+
+
+
+

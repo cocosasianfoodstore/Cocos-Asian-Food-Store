@@ -1,0 +1,1267 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ********* ROOT *********** */
+:root{
+    --primary-color:#016450;
+    --dark-green:#023020;
+    --words-shadow:#2e5722;
+    --secondary-color: #ffcf60;
+    --accent-color:#9c161f;
+    --supporting-color:#fff;
+    --shadow-color: #000;
+    --font-style:'Open Sans', sans-serif;
+    --element-shadow:drop-shadow(2px 2px 20px #000000);
+    --vignette-shadow: 0 0 200px var(--dark-green) inset;
+    --text-border:drop-shadow(1px 3px 2px #000000);
+    --element-border:drop-shadow(1px 1px 4px #000000);
+    --main-background: linear-gradient(rgba(3, 83, 67, 0.925), rgba(3, 83, 67, 0.925)), url(../Index-Image/index-main-bg.jpg);
+
+    --sub-background: linear-gradient(rgb(255, 207, 96, 0.95), rgb(255, 207, 96, 0.90)), url(../Index-Image/index-main-bg.jpg);
+ 
+    --page-break-background: url(../Index-Image/Page-break-two.png);
+}
+
+/* ==================== NAVIGATION CONTAINER ==================== */
+.navigation-container {
+    height: 100vh;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    z-index: 1000;
+    position: fixed;
+    right: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3% 10px;
+}
+
+.navigation-container .nav-item .slide-button img{
+    width: 48px;
+    margin: 4px;
+}
+
+.nav-item .slide-button {
+    background: var(--accent-color);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav-item .slide-button-info {
+    font-size: 0;
+    width: 0;
+    color: var(--supporting-color);
+    line-height: 56px;
+    height: 56px;
+    left: 20px;
+    position: absolute;
+    vertical-align: middle;
+    background: var(--accent-color);
+    border-radius: 20px 40px 40px 20px;
+    z-index: -1;
+    transition: width .3s, height .3s, font-size .2s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: width .3s, height .3s, font-size .2s;
+    font-weight: 600;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.slide-button:hover .slide-button-info {
+    width: 140px;
+    left: 30px;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+.slide-button:hover, 
+.slide-button-info {
+    transform: translateX(-28px);
+    transition: .3s;
+}
+
+.navigation-container div:nth-child(6) {
+    margin-top: 20px;
+}
+
+.back-to-top {
+    background: var(--accent-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.back-to-top img {
+    width: 42px;
+    margin: 4px;
+}
+
+  /* ********* UNIVERSAL SELECTOR *********** */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-style);
+    user-select: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--accent-color);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-track{
+    background: var(--supporting-color);
+}
+
+.page-break{
+    position: relative;
+    background-image: var(--page-break-background);
+    background-size:cover;
+    background-position: center;
+    height: 8vh;
+    width: 100%;
+    z-index: 500;
+}
+
+/* FIRST PAGE ABOUT */
+
+.about-page-one{
+    width: 100%;
+    height: 100vh;
+    background-image: var(--main-background);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    position: relative;
+    top: 30vh;
+    color: var(--primary-color);
+   
+}
+
+.about-text h1:nth-child(1){
+    text-shadow:#000;
+    color: var(--primary-color);
+    font-size: 6rem;
+    background-color: var(--secondary-color);
+    width: max-content;
+    padding: 3%;
+    font-weight: 700;
+    filter: var(--element-border);
+    border-radius: 5px;
+}
+
+.about-text h1:nth-child(2){
+    background-color: var(--secondary-color);
+    width: 90%;
+    text-wrap: wrap;
+    height: 20vh;
+    text-shadow:#000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    padding: 0 2% 0 2%;
+    border-radius: 5px;
+    filter: var(--element-border);
+}
+
+.about-page-two{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: var(--main-background);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.our-staff-one{
+    height: 80vh;
+    width: 82%;
+    position: relative;
+    top: 10%;
+    left: 6%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-row-gap: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    filter: var(--element-border);
+}
+
+.our-staff-one h1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    place-self:center;
+    color: var(--secondary-color);
+    font-size: 4rem;
+    font-weight: 700;
+}
+.owner-details{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 10px;
+}
+
+.owner-details h1{
+    color: var(--primary-color);
+}
+
+.owner-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.owner-text h1,h2,p{
+    width: 80%;
+    place-self: center;
+    margin-left: 5%;
+}
+
+.owner-text h1{
+    text-wrap: nowrap;
+}
+
+.owner-text h2{
+    color: var(--accent-color);
+    background-color: var(--supporting-color);
+    padding: 0 2%;
+    margin-top: 2%;
+    font-weight: 700;
+}
+
+.owner-text p{
+    padding-top: 2%;
+    font-weight: 700;
+    text-align: justify;
+}
+.owner-details img:nth-child(1){
+    rotate:90deg;
+    scale:1.1;
+    position: absolute;
+    top: 38%;
+    left: -3%;
+    translate: -5% 1%;
+}   
+
+.owner-details img:nth-child(3){
+    width: 30%;
+    height: 100%;
+    margin-right: 0%;
+    z-index: 3;
+    border: 20px solid var(--accent-color);
+    border-radius: 0 10PX 10px 0;
+}
+
+.about-page-three{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: var(--sub-background);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo-and-employees{
+    height: 100vh;
+    width: 80%;
+    position: relative; 
+    left: 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows:1fr;
+    filter: var(--element-border);
+    grid-column-gap: 3%;
+}
+
+.about-logo{
+    background:url(../Index-Image/logo-no-bg-cocos.png), var(--supporting-color);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    place-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 20px;
+}
+
+
+.more-staff{
+    height: 80vh;
+    width: 100%;
+    place-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: repeat(3,200px);
+    filter: var(--element-border);
+}
+
+.more-staff img{
+    width: 100%;
+    height: 100%;
+    place-self: left;
+    
+}
+
+.employee{
+    display: flex;
+    height: 100%;
+    width: 100%;
+} 
+
+.employee h1{
+    font-weight: 700;
+}
+
+.employee:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.employee:nth-child(2){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.employee:nth-child(3){
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.employee-details{
+    width: 100%;
+    height: 100%;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    color: var(--supporting-color);
+    font-size: 1.5rem;
+}
+
+.employee-details h4{
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    height: auto;
+    width: fit-content;
+    text-wrap: nowrap;
+    padding:3%;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+.about-page-four{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: var(--main-background);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.operation-hours{
+    filter: var(--element-border);
+    height: 80vh;
+    width: 80%;
+    position: relative; 
+    top: 10%;
+    left: 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows:1fr;
+}
+
+.operation-hours-left{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background: url(../Index-Image/Chinese-Lantern-frame-one.png), var(--supporting-color);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.op-left-header{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.op-left-header h1{
+    width: 50%;
+    text-align: right;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--primary-color);
+}
+
+.op-left-header span{
+    color: var(--secondary-color);
+}
+
+.op-left-contents{
+    position: relative;
+    top: 30%;
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.op-left-contents h3{
+    width: 80%;
+    color: var(--primary-color);
+    margin-bottom: 1%;
+    font-weight: 700;   
+    font-size: 1.5rem;
+}
+
+.op-left-contents h1{
+    width: 80%;
+    font-weight: 700;   
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.operation-hours-right{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background:url(../Index-Image/about-operationhrsright.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/* ********* CUSTOMER REVIEWS *********** */
+
+.customer-reviews{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background: var(--main-background);
+    background-attachment: fixed;
+}
+
+.reviews-left{
+    position: relative;
+    height: 80vh;
+    width: 45%;
+    margin: 5% 0 5% 5%;
+}
+
+.reviews-left img{
+    z-index: 2;
+    height: 100%;
+    filter: var(--element-border);
+}
+
+.reviews-right{
+    margin: 0 -5% 0 0;
+    width: 40%;
+    height: 100vh;
+}
+
+.testimonial-carousel{
+    position: absolute;
+    z-index: 4;
+    color: var(--secondary-color);
+    height: 50%;
+    width: 170%;
+    font-family: var(--font-style);
+    bottom:20%;
+    left:100%;
+    transform:translate(-50%,-50%);
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    filter: var(--element-border);
+}
+
+.review-details{
+    height: 15vh;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--supporting-color);
+}
+
+.review-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-item  h1{
+    width: 70%;
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.carousel-item h4{
+   font-weight: 900;
+}
+
+@media all and (max-width:1600px){
+    #menuToggle, #menuToggle input{
+        display: none;
+    }
+}
+
+/* NAVIGATION MEDIA QUERIES */
+
+
+@media all and (max-width:1100px){
+
+    .navigation-container{
+        right: 2.5%;
+    }
+    .about-text h1:nth-child(1){
+    font-size: 5.5rem;
+    }
+
+    .about-text h1:nth-child(2){
+        font-size: 1.3rem;
+    }
+
+    .our-staff-one h1{
+        font-size: 3.5rem;
+    }
+
+    .owner-details img:nth-child(1){
+        rotate:90deg;
+        scale:1.07;
+        position: absolute;
+        top: 38%;
+        left: -3%;
+        translate: -10% 2%;
+    }   
+
+    .owner-details img:nth-child(3){
+        width: 40%;
+    }
+
+    .more-staff{
+        scale: 0.8;
+    }
+
+    .logo-and-employees{
+        left: 3%;
+        gap: 0;
+        width: 90%;
+    }
+
+    .about-logo{
+        height: 70%;
+    }
+
+    .operation-hours-left{
+        background-size: contain;
+        background-repeat: repeat-y;
+        border-radius:10px 0 0 10px ;
+    }
+
+    .op-left-header{
+        top: 35%;
+        font-size: 1.2rem;
+        gap: 2rem;
+    }
+
+    .op-left-header img{
+        scale: 0.8;
+        translate:40% 0;
+    }
+
+    .op-left-contents{
+        top: 35%;
+    }
+
+    .op-left-contents h1{
+        width: 80%;
+        text-align: center;
+        line-height: 1;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+
+    .op-left-contents h3{
+        font-size: 1.2rem;
+    }
+
+    .operation-hours-right{
+        width: 100%;
+        height: 100%;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        background:url(../INDEXIMAGES/about-operationhrsright.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius:0 10px 10px 0 ;
+    }
+    /* 1024 CUSTOMER REVIEWS */
+    
+
+    .carousel-item  h1{
+        font-size: 2rem;
+    }
+}
+
+@media all and (max-width:768px){
+    #menuToggle, #menuToggle input{
+        display: block;
+    }
+
+    .navigation-container{
+        display: none;
+    }
+    .about-text h1:nth-child(2){
+        width: 90%;
+        height: 20vh;
+    } 
+    .our-staff-one{
+        height: 70vh;
+        width: 94%;
+        top: 15%;
+        left: 3%;
+    }
+    .our-staff-one h1{
+        font-size:3.7rem;
+        text-align: center;
+    }
+    .owner-details{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--secondary-color);
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border-radius: 10px;
+    }
+    .owner-details h1{
+        color: var(--primary-color);
+        text-align: left;
+    }
+
+    .owner-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .owner-text h1,h2,p{
+        width: 80%;
+        place-self: center;
+        margin-left: 5%;
+    }
+
+    .owner-text h1{
+        font-size: 2.5rem;
+    }
+
+    .owner-text h2{
+        font-size: 1.3rem;
+    }
+
+    .owner-text p{
+        padding-top: 2%;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+    .owner-details img:nth-child(1){
+        scale:0.90;
+        translate: -16% 0%;
+    }   
+
+    .owner-details img:nth-child(3){
+        width: 43%;
+    }
+
+    .about-logo{
+        height: 60%;
+        translate: 4% 0;
+    }
+
+    .more-staff{
+        scale:0.6;
+        translate: -6% 0;
+    }
+
+    
+.operation-hours{
+    width: 90%;
+    left: 5%;
+}
+    
+.operation-hours-left{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
+}
+
+    .op-left-header{
+        top: 35%;
+        left: 4%;
+        font-size: 1.1rem;
+        gap: 0rem;
+    }
+
+    .op-left-header img{
+        scale: 0.7;
+        translate:-5% 0;
+    }
+
+    .op-left-header h1{
+        width: 70%;
+    }
+
+    .op-left-contents{
+        top: 35%;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .op-left-contents h3{
+        width: 85%;
+        color: var(--primary-color);
+        margin-bottom: -1%;
+    }
+
+    .op-left-contents h1{
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    /* 768 CUSTOMER REVIEWS */
+
+    .testimonial-carousel{
+        width: 200%;
+        left: 110%;
+        bottom:25%;
+    }
+
+    .carousel-item  h1{
+        font-size: 1.5rem;
+    }
+
+    
+    .carousel-indicators{
+        display: none;
+    }
+
+
+}
+
+@media all and (max-width:426px){
+
+    .about-text h1:nth-child(1){
+        font-size: 4rem;
+    }
+
+    .about-text h1:nth-child(2){
+        width: 100%;
+        height: 23vh;
+        font-size: 1.2rem;
+        position: relative;
+        left: 20%;
+    }
+
+    .about-page-two{
+        height: 120vh;
+    }
+
+    .our-staff-one{
+        height: 105vh;
+        width: 80%;
+        top: 4%;
+        left: 10%;
+        grid-row-gap: 1rem;
+    }
+
+    .our-staff-one h1{
+        font-size: 2rem;
+    }
+    .owner-details{
+        display: grid;
+        grid-row-gap: 0;
+        grid-template-rows: 1fr 1fr;
+        height: 80%;
+    }
+    .owner-text{
+        height: 60%;
+        width: 100%;
+    }
+    
+    .owner-text h1,h2,p{
+        width: 70%;
+        margin-left: 0%;
+        place-self: center;
+    }
+    .our-staff-one h2{
+        width: 75%;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .owner-text h1{
+        width: 100%;
+        text-align: center;
+    }
+    .owner-text p{
+        font-size: 0.8rem;
+        padding-top: 5%;
+        width: 75%;
+        text-align: justify;
+    }
+    .owner-details img:nth-child(1){
+        rotate:360deg;
+        scale:0.8;
+        top: 75%;
+        translate: -6.5% 2%;
+    }  
+    .owner-details img:nth-child(3){
+        width: 100%;
+        height: 80%;
+        object-fit:cover;
+        margin-right: 0%;
+        border-radius: 10px 10px 0 0 ;
+        grid-row: 1/2;
+    }
+
+    .about-page-three{
+        height: 105vh;
+    }
+
+    .logo-and-employees{
+        height: 90vh;
+        width: 80%;
+        position: relative; 
+        top: 5%;
+        left: 7%;
+        display: grid;
+        grid-template-rows: 1fr 1fr; 
+        grid-template-columns:1fr;
+        grid-row-gap: 0%;
+    }
+
+    .about-logo{
+        height: 45vh;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-radius: 20px;
+    }
+
+    .more-staff{
+        height: 50vh;
+        width: 100%;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-rows: repeat(3,200px);
+        translate: -12% -15%;
+    }
+
+    .operation-hours{
+        height: 90vh;
+        width: 80%;
+        top: 5%;
+        left: 10%;
+        grid-template-rows: 1fr 1fr; 
+        grid-template-columns:1fr;
+    }
+
+    .operation-hours-left{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        border-radius: 10px 10px 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .op-left-header{
+        top: 18%;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .op-left-header h1{
+        font-size: 2rem;
+    }
+
+    .op-left-header img{
+        scale: 0.6;
+    }
+
+    .op-left-contents{
+        top: 15%;
+        font-size: 0.9rem;
+    }
+
+    .op-left-contents h3{
+        width: 70%;
+        margin-bottom: 0%;
+        font-size: 1.05rem;
+    }
+
+    .op-left-contents h1{
+        width: 75%;
+        line-height: 1;
+    }
+
+    .op-left-contents h1:nth-child(3){
+        translate:  0 -65%;
+    }
+
+    .operation-hours-right{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-radius: 0 0 10px 10px;
+    }
+    /* 425 CUSTOMER REVIEWS */
+    .yellow-chinese-frame{
+        position: absolute;
+        transform: scale(0.8);
+        top: 8%;
+        left: -3%;
+    }
+
+    .testimonial-carousel{
+        width: 200%;
+        left: 110%;
+        bottom:15%;
+    }
+
+    .carousel-item  h1{
+        font-size: 1.1rem;
+    }
+
+    .carousel-item  h4,h5{
+        font-size: 1rem;
+    }
+    
+}
+
+@media all and (max-width:376px){
+   
+    .about-text h1:nth-child(1){
+        font-size: 3.5rem;
+    }
+
+    .about-text h1:nth-child(2){
+        width: 90%;
+        height: 23.5vh;
+        font-size: 1.1rem;
+        left: 25%;
+    }
+    .our-staff-one h1{
+        font-size: 2rem;
+    }
+
+    .our-staff-one h2{
+        width: 80%;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .owner-details{
+        display: grid;
+        grid-row-gap: 0;
+        grid-template-rows: 1fr 1fr;
+        height: 90%;
+    }
+    .owner-text{
+        height: 100%;
+    }
+    .owner-text h1{
+        width: 100%;
+        text-align: center;
+    }
+    .owner-text p{
+        font-size: 0.8rem;
+        padding-top: 5%;
+        width: 80%;
+        text-align: justify;
+    }
+    .owner-details img:nth-child(1){
+        rotate:360deg;
+        scale:0.7;
+        top: 75%;
+        translate: -12% 3%;
+    }  
+    .owner-details img:nth-child(3){
+        width: 100%;
+        height: auto;
+        margin-right: 0%;
+        border-radius: 10px 10px 0 0 ;
+        grid-row: 1/2;
+    }
+
+    .about-page-three{
+        height: 105vh;
+    }
+
+    .logo-and-employees{
+        height: 90vh;
+        width: 80%;
+        position: relative; 
+        top: 5%;
+        left: 7%;
+        display: grid;
+        grid-template-rows: 1fr 1fr; 
+        grid-template-columns:1fr;
+        grid-row-gap: 0%;
+    }
+
+    .about-logo{
+        height: 45vh;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-radius: 20px;
+    }
+
+    .more-staff{
+        height: 50vh;
+        width: 100%;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-rows: repeat(3,200px);
+    }
+
+    .employee{
+        height: 80%;
+        width: 100%;
+    }
+
+    .operation-hours{
+        scale: 1;
+    }
+
+    .op-left-header{
+        top: 15%;
+        left: 5%;
+        scale: 0.8;
+    }
+
+    .op-left-header img{
+        scale: 0.6;
+    }
+
+    .op-left-contents{
+        top: 8%;
+        scale: 0.9;
+    }
+
+    .op-left-contents h3{
+        width: 87%;
+        margin-bottom: 0%;
+    }
+
+    .op-left-contents h1{
+        width: 80%;
+    }
+
+    .operation-hours-right{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-radius: 0 0 10px 10px;
+    }
+
+    /* 375 customer reviews */
+    .testimonial-carousel{
+        height: 30%;
+        top: 25%;
+    }
+
+}
+
+@media all and (max-width:320px){
+
+    .about-text h1:nth-child(2){
+        font-size: 1rem;
+        left: 32%;
+    }
+    .our-staff-one h1{
+        font-size: 1.7rem;
+    }
+
+    .our-staff-one h2{
+        width: 80%;
+        font-size: 1.1rem;
+    }
+
+    .owner-details{
+        height: 100%;
+    }
+    .owner-text{
+        height: 100%;
+    }
+    .owner-details img:nth-child(1){
+        rotate:360deg;
+        scale:0.62;
+        top: 70%;
+        translate: -17% 9%;
+    }  
+
+    .owner-details p{
+        width: 80%;
+        text-align: justify;
+    }
+    .about-logo{
+        height: 45vh;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-radius: 20px;
+    }
+
+    .more-staff{
+        height: 50vh;
+        width: 100%;
+        translate: -20% -15%;
+    }
+
+    .operation-hours{
+        width: 50%;
+        left: 1em;
+    }
+
+    .op-left-header{
+        top: 15%;
+        left: 5%;
+        scale: 0.8;
+    }
+
+    .op-left-header img{
+        scale: 0.6;
+    }
+
+    .op-left-contents{
+        top: 8%;
+        scale: 0.9;
+    }
+
+    .op-left-contents h3{
+        width: 87%;
+        margin-bottom: 0%;
+    }
+
+    .op-left-contents h1{
+        width: 80%;
+    }
+
+    .operation-hours-right{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-radius: 0 0 10px 10px;
+    }
+
+     /* 320px CUSTOMER REVIEWS */
+     .yellow-chinese-frame{
+        position: absolute;
+        transform: scale(0.7);
+        top: 8%;
+        left: -30%;
+    }
+
+    .testimonial-carousel{
+        width: 180%;
+        height: 23vh;
+        left: 105%;
+        bottom:20%;
+    }
+    .review-details{
+        transform: scale(0.8);
+        gap: 1rem;
+        width: 90%;
+    }
+    .carousel-item  h1{
+        font-size: 1.1rem;
+    }
+    .carousel-item  h4,h5{
+        font-size: 1rem;
+    }
+
+}

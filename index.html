@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coco's Asian Food Store</title>
+    <link rel="shortcut icon" href="./Index-Image/favicon-32x32.png" type="image/x-icon">
+    
+    <!-- ===================================================
+    =============   S T Y L E   S H E E T S    =============
+    ========================================================-->
+    <link rel="stylesheet" href="./Index-Styles/welcome-styles.css">
+</head>
+<body>
+    <!-- ====================================================
+    =============   S P L A S H     S C R E E N =============
+    =========================================================-->
+    <main  id="splash-screen">
+            <header>
+                <img src="./Index-Image/index-Chinese-Lantern.png" alt="index-Chinese-Lantern-2">
+                <img src="./Index-Image/index-Chinese-Lantern-2.png" alt="index-Chinese-Lantern-2">
+            </header>
+            <section>
+                <img src="./Index-Image/index-Logo.png" alt="" class="logo">
+                <div class="welcome-text">
+                    <h1>COCO's</h1>
+                    <h3>Asian Food Store</h3>
+                    <h4>We serve asian food and more...</h4>
+                </div>
+            </section>
+            <div class="nextPage">
+                <button id="nextButton">PROCEED</button>
+            </div>
+    </main>  
+
+    <!-- ================================================
+    =============   W E L C O M E   P A G E =============
+    =====================================================-->
+    <div class="welcome-page" id="#mainPage">
+        <div class="welcome-left" id="store-name">
+            <img src="./Index-Image/index-Chinese-Lantern-7.png" alt="three chinese lantern design red and yellow">
+                <h1>COCO'S ASIAN <br> FOOD STORE</h1>      
+        </div>
+
+        <!-- ============================================================
+        =============   W E L C O M E   S E L E C T I O N   =============
+        =================================================================-->
+        <div class="welcome-right">
+            <div class="welcome-nav-row-one">
+                <div class="welcome-nav-item">
+                    <a href="./menu-page.html">
+                    <p>Check our great</p>
+                    <p>deals in the</p>
+                    <h1>MENU</h1>
+                    </a>
+                </div>
+
+                <div class="welcome-nav-item">
+                    <a href="./about-page.html">
+                    <p>Get to know more</p>
+                    <p>Coco's in our</p>
+                    <h1>ABOUT</h1>
+                    </a>
+                </div>
+
+                <div class="welcome-nav-item">
+                    <a href="./contact-page.html">
+                    <p>Find ways to</p>
+                    <p>connect with us in</p>
+                    <h1>CONTACT US</h1>
+                    </a>
+                </div>
+
+                <div class="welcome-nav-item">
+                    <a href="./about-page.html#testimonials">
+                    <p>Read comments</p>
+                    <p>of our satisfied suki at</p>
+                    <h1>CUSTOMER REVIEWS</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+    <!-- ================================================
+    =============   J A V A S C R I P T     =============
+    =====================================================-->
+    <script>
+        var nextButton = document.getElementById("nextButton");
+        var splashScreen = document.getElementById("splash-screen");
+        var mainPage = document.getElementById("mainPage");  
+    
+        var i = 0;
+
+        nextButton.addEventListener("click", function () {
+            i++;
+            if (i == 1) {
+            splashScreen.style.display = "none";
+            mainPage.style.display = "inline-block";
+            }
+            else if(i>1){
+                splashScreen.style.display = "inline-block";
+                mainPage.style.display = "none";
+                i=0;
+            }
+        }); 
+    </script>
+</body>
+</html>
