@@ -197,7 +197,7 @@
 /* ======================================================================
 =========       N A V I G A T I O N     H A M B U R G E R       =========
 ========================================================================= */
-@media (max-width: 425px) and (min-width: 250px) {
+@media (max-width: 426px) and (min-width: 250px) {
     .navigation-container {
         display: none;
     }
